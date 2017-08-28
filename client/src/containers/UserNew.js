@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
+import UserSignUpForm from '../components/UserSignUpForm';
 
 import { updateUserFormData } from '../actions/userActions';
 
-import '../components/UserSignUpForm';
-
-const UserNew = event => {
-  const handleOnClick = () => {
-    update
+class UserNew extends Component {
+  
+  handleOnClick = event => {
+    const { id, value } = event.target;
   }
   
-  const handleOnChange = event => {
+  handleOnChange = event => {
     const { id, value } = event.target;
 
     const currentUserFormData = Object.assign({},
@@ -21,13 +22,19 @@ const UserNew = event => {
     this.props.updateUserFormData(currentUserFormData);
   }
 
-  return (
-    <UserSignUpForm handleOnChange={this.handleOnChange} handleOnClick={this.handleOnClick} />
-  )
+  handleOnSubmit = event => {
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <UserSignUpForm userFormData={this.props.userFormData} handleOnChange={this.handleOnChange} handleOnClick={this.handleOnClick} handleOnSubmit={this.handleOnSubmit} />
+    )
+  }
 }
 
 const mapStateToProps = state => {
-  return { userFormData: state.userFormData }
+  return ({ userFormData: state.userFormData })
 }
 
-export default (mapStateToProps, { updateUserFormData })(UserNew);
+export default connect (mapStateToProps, { updateUserFormData })(UserNew);
