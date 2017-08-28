@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: collab-create-api_development
+  database: collab-create_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: collab-create-api_test
+  database: collab-create_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: collab-create-api_production
-  username: collab-create-api
-  password: <%= ENV['COLLAB-CREATE-API_DATABASE_PASSWORD'] %>
+  database: collab-create_production
+  username: collab-create
+  password: <%= ENV['COLLAB-CREATE_DATABASE_PASSWORD'] %>
