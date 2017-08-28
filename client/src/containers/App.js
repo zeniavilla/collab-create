@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import './App.css';
@@ -7,9 +8,13 @@ import Services from './Services';
 class App extends Component {
   render() {
     return(
-      <div>
-        <Services services={this.props.services} />
-      </div>
+      <Router>
+        <div>
+          <div id="wrapper">
+          <Route path="/services" component={Services} />
+          </div>
+        </div>
+      </Router>
     )
   }
 }
