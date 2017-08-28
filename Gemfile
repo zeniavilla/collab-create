@@ -22,6 +22,7 @@ gem 'figaro'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-instagram'
+gem 'instagram'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
