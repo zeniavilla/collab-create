@@ -23,6 +23,7 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-instagram'
 gem 'instagram'
+gem 'omniauth-facebook'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
