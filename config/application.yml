@@ -10,7 +10,11 @@
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
-
+development:
   INSTAGRAM_APP_ID: "07920840a2a54b1fab4993d183b635e1"
   INSTAGRAM_APP_SECRET: "bb69afe4b04c43fc91beb30b054865dc"
+
+  FACEBOOK_APP_ID: "150421402209228"
+  FACEBOOK_APP_SECRET: "07a004737db70a129a4a2dc60c25a4f2"
+
   COLLAB-CREATE_DATABASE_PASSWORD: "password"
