@@ -5,6 +5,7 @@ import './App.css';
 import Services from '../containers/Services';
 import NavBar from './NavBar';
 import Footer from './Footer';
+import UserSignUpForm from './UserSignUpForm';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <div id="wrapper">
             <NavBar />
             <Route path="/services" component={Services} />
+            <Route path="/sign_up" component={UserSignUpForm} />
           </div>
 
           <Footer />
