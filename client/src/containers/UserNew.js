@@ -3,12 +3,14 @@ import { connect } from 'react-redux';
 
 import UserSignUpForm from '../components/UserSignUpForm';
 
-import { updateUserFormData } from '../actions/userActions';
+import { updateUserFormData, createOmniauthUser, createUser } from '../actions/userActions';
 
 class UserNew extends Component {
   
   handleOnClick = event => {
-    const { id, value } = event.target;
+    const provider = event.target.name;
+
+    this.props.createOmniauthUser(provider);
   }
   
   handleOnChange = event => {
@@ -24,6 +26,10 @@ class UserNew extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
+    const { createUser, history } = this.props;
+
+    createUser(this.props.userFormData);
+    history.push('/');
   }
 
   render() {
@@ -37,4 +43,4 @@ const mapStateToProps = state => {
   return ({ userFormData: state.userFormData })
 }
 
-export default connect (mapStateToProps, { updateUserFormData })(UserNew);
+export default connect (mapStateToProps, { updateUserFormData, createOmniauthUser, createUser })(UserNew);
