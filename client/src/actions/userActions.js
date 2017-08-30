@@ -36,7 +36,7 @@ export const createOmniauthUser = provider => {
 
 export const createUser = user => {
   return dispatch => {
-    return fetch(`${API_URL}/users`, {
+    return fetch(`${API_URL}/users.json`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
