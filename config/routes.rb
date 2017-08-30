@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   scope '/api' do
-    devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+    devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks", :sessions => 'sessions', :registrations => 'registrations' }
   end
 
   namespace :api do
