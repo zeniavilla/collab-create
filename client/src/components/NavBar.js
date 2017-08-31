@@ -27,7 +27,7 @@ const NavBar = props =>
       {
         (props.currentUser.id) 
         ? <Nav pullRight>
-          <NavItem eventKey={1}>props.currentUser.name</NavItem>
+          <NavItem eventKey={1}>{props.currentUser.name}</NavItem>
           <LinkContainer to="/sign_out">
             <NavItem eventKey={2}>Sign Out</NavItem>
           </LinkContainer>
