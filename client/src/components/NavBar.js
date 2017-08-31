@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
-const NavBar = () =>
+const NavBar = props =>
 <Navbar inverse collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
@@ -24,12 +24,22 @@ const NavBar = () =>
       </NavDropdown>
     </Nav>
     <Nav pullRight>
-      <LinkContainer to="/sign_in">
-        <NavItem eventKey={1}>Sign In</NavItem>
-      </LinkContainer>
-      <LinkContainer to="/sign_up">
-        <NavItem eventKey={2}>Create Account</NavItem>
-      </LinkContainer>
+      {
+        (props.currentUser.length) 
+        ? <NavItem eventKey={1}>currentUser.name</NavItem>
+        : <LinkContainer to="/sign_in">
+          <NavItem eventKey={1}>Sign In</NavItem>
+        </LinkContainer>
+      }
+      {
+        (props.currentUser.length)
+        ? <LinkContainer to="/sign_out">
+          <NavItem eventKey={2}>Sign Out</NavItem>
+        </LinkContainer>
+        : <LinkContainer to="/sign_up">
+          <NavItem eventKey={2}>Create Account</NavItem>
+        </LinkContainer>
+      }
     </Nav>
   </Navbar.Collapse>
 </Navbar>
