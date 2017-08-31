@@ -26,10 +26,17 @@ class UserNew extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    const { createUser, history } = this.props;
+    const { createUser } = this.props;
 
     createUser(this.props.userFormData);
-    history.push('/');
+  }
+  
+  componentDidUpdate = (prevProps, prevState) => {
+    const { history } = this.props;
+    if (this.props.currentUser.id) {
+      history.push(`/profile/${this.props.currentUser.id}`);
+    }
+
   }
 
   render() {
@@ -40,7 +47,10 @@ class UserNew extends Component {
 }
 
 const mapStateToProps = state => {
-  return ({ userFormData: state.userFormData })
+  return ({ 
+    userFormData: state.userFormData,
+    currentUser: state.currentUser
+  })
 }
 
 export default connect (mapStateToProps, { updateUserFormData, createOmniauthUser, createUser })(UserNew);
