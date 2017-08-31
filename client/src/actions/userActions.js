@@ -48,3 +48,18 @@ export const createUser = user => {
       .catch(error => console.log(error))
   }
 }
+
+export const createSession = user => {
+  return dispatch => {
+    return fetch(`${API_URL}/users/sign_in.json`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ user: user })
+    })
+      .then(response => response.json())
+      .then(user => dispatch(addUser(user)))
+      .catch(error => console.log(error))
+  }
+}
