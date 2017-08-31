@@ -7,6 +7,7 @@ import NavCurrentUser from '../containers/NavCurrentUser';
 import Footer from './Footer';
 import UserNew from '../containers/UserNew';
 import UserProfileEdit from '../containers/UserProfileEdit';
+import SessionNew from '../containers/SessionNew';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <NavCurrentUser />
             <Route path="/services" component={Services} />
             <Route path="/sign_up" component={UserNew} />
+            <Route path="/sign_in" component={SessionNew} />
             <Route path="/profile/:user_id" component={UserProfileEdit} />
           </div>
 
