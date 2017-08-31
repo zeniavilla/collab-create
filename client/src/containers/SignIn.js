@@ -5,7 +5,7 @@ import SignInForm from '../components/SignInForm';
 
 import { updateUserFormData, createSession } from '../actions/userActions';
 
-class SessionNew extends Component {
+class SignIn extends Component {
 
   handleOnChange = event => {
     const { id, value } = event.target;
@@ -45,4 +45,4 @@ const mapStateToProps = state => {
   })
 }
 
-export default connect(mapStateToProps, { updateUserFormData, createSession })(SessionNew);
+export default connect(mapStateToProps, { updateUserFormData, createSession })(SignIn);
