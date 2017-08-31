@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import SignInForm from '../components/SignInForm';
 
-import { updateUserFormData } from '../actions/userActions';
+import { updateUserFormData, createSession } from '../actions/userActions';
 
 class SessionNew extends Component {
 
@@ -20,6 +20,15 @@ class SessionNew extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
+    const { createSession } = this.props;
+    createSession(this.props.userFormData);
+  }
+ 
+  componentDidUpdate = (prevProps, prevState) => {
+    const { history } = this.props;
+    if (this.props.currentUser.id) {
+      history.push(`/profile/${this.props.currentUser.id}`);
+    }
   }
 
   render() {
@@ -30,7 +39,10 @@ class SessionNew extends Component {
 }
 
 const mapStateToProps = state => {
-  return ({ userFormData: state.userFormData })
+  return ({
+    userFormData: state.userFormData,
+    currentUser: state.currentUser
+  })
 }
 
-export default connect(mapStateToProps, { updateUserFormData })(SessionNew);
+export default connect(mapStateToProps, { updateUserFormData, createSession })(SessionNew);
