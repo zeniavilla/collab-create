@@ -1,13 +1,39 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import UserProfileForm from '../components/UserProfileForm';
 
+import { updateUserFormData, editUser } from '../actions/userActions';
+
 class UserProfileEdit extends Component {
+
+  handleOnChange = event => {
+    const { id, value } = event.target;
+    const currentUserFormData = Object.assign({},
+      this.props.userFormData, {
+        [id]: value
+      })
+  
+    this.props.updateUserFormData(currentUserFormData);
+  }
+
+  handleOnSubmit = event => {
+    event.preventDefault();
+    this.props.editUser(this.props.userFormData);
+  }
+
   render() {
     return (
-      <UserProfileForm />
+      <UserProfileForm currentUser={this.props.userFormData} handleOnChange={this.handleOnChange} handleOnSubmit={this.handleOnSubmit} />
     )
   }
 }
 
-export default UserProfileEdit;
+const mapStateToProps = state => {
+  return ({ 
+    currentUser: state.currentUser,
+    userFormData: state.userFormData
+  })
+}
+
+export default connect(mapStateToProps, { updateUserFormData, editUser })(UserProfileEdit);
