@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { deleteSession } from '../actions/userActions';
+import { clearSession } from '../actions/userActions';
 
 class SignOut extends Component {
-
-  componentDidMount = () => {
-    deleteSession();
+  componentWillMount = () => {
+    this.props.clearSession();
     const { history } = this.props;
     history.push('/sign_in');
   }
@@ -16,4 +15,4 @@ class SignOut extends Component {
   }
 }
 
-export default connect (null, { deleteSession })(SignOut);
+export default connect(null, { clearSession })(SignOut);
