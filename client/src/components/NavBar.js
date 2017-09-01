@@ -6,7 +6,9 @@ import { LinkContainer } from 'react-router-bootstrap';
 const NavBar = props => {
   const userLinks = (
     <Nav pullRight>
-      <NavItem eventKey={1}>{props.currentUser.name}</NavItem>
+      <LinkContainer to={`/profile/${props.currentUser.id}`}>
+        <NavItem eventKey={1}>Hey, {props.currentUser.name}</NavItem>
+      </LinkContainer>
       <LinkContainer to="/sign_out">
         <NavItem eventKey={2}>Sign Out</NavItem>
       </LinkContainer>
