@@ -36,7 +36,9 @@ const NavBar = props => {
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav>
-          <NavItem eventKey={1} href="#">Link</NavItem>
+          <LinkContainer to="/services">
+            <NavItem eventKey={1}>Services</NavItem>
+          </LinkContainer>
           <NavItem eventKey={2} href="#">Link</NavItem>
           <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
             <MenuItem eventKey={3.1}>Action</MenuItem>
