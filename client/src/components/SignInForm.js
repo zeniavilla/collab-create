@@ -7,11 +7,11 @@ const SignInForm = props => {
   return(
     <form onSubmit={handleOnSubmit}>
       <div className="form-field">
-        <input type="email" id="email" placeholder="Email" onChange={handleOnChange} value={email} />
+        <input type="email" id="email" placeholder="Email" onChange={handleOnChange} value={email || ''} />
       </div>
 
       <div className="form-field">
-        <input type="password" id="password" placeholder="Password" onChange={handleOnChange} value={password} />
+        <input type="password" id="password" placeholder="Password" onChange={handleOnChange} value={password || ''} />
       </div>
 
       <div className="form-action">
