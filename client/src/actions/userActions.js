@@ -9,6 +9,12 @@ export const updateUserFormData = userFormData => {
   }
 }
 
+const resetUserForm = () => {
+  return {
+    type: 'RESET_USER_FORM'
+  }
+}
+
 const addOmniauthUser = user => {
   return {
     type: 'CREATE_OMNIAUTH_USER',
@@ -18,7 +24,7 @@ const addOmniauthUser = user => {
 
 const addUser = user => {
   return {
-    type: 'CREATE_USER',
+    type: 'SET_CURRENT_USER',
     user
   }
 }
@@ -44,7 +50,10 @@ export const createUser = user => {
       body: JSON.stringify({ user: user })
     })
       .then(response => response.json())
-      .then(user => dispatch(addUser(user)))
+      .then(user => {
+        dispatch(addUser(user))
+        dispatch(resetUserForm())
+      })
       .catch(error => console.log(error))
   }
 }
@@ -59,7 +68,10 @@ export const createSession = user => {
       body: JSON.stringify({ user: user })
     })
       .then(response => response.json())
-      .then(user => dispatch(addUser(user)))
+      .then(user => {
+        dispatch(addUser(user))
+        dispatch(resetUserForm())
+      })
       .catch(error => console.log(error))
   }
 }
