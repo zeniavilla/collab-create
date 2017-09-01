@@ -29,6 +29,12 @@ const addUser = user => {
   }
 }
 
+export const clearSession = () => {
+  return {
+    type: 'CLEAR_CURRENT_USER',
+  }
+}
+
 // ** Async Actions **
 
 export const createOmniauthUser = provider => {
