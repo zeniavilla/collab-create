@@ -1,11 +1,11 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { clearSession } from '../actions/userActions';
+import { removeCurrentUser } from '../actions/userActions';
 
 class SignOut extends Component {
   componentWillMount = () => {
-    this.props.clearSession();
+    this.props.removeCurrentUser();
     const { history } = this.props;
     history.push('/sign_in');
   }
@@ -15,4 +15,4 @@ class SignOut extends Component {
   }
 }
 
-export default connect(null, { clearSession })(SignOut);
+export default connect(null, { removeCurrentUser })(SignOut);

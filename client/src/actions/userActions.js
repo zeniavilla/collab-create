@@ -29,7 +29,7 @@ const addUser = user => {
   }
 }
 
-export const clearSession = () => {
+const clearSession = () => {
   return {
     type: 'CLEAR_CURRENT_USER',
   }
@@ -58,8 +58,28 @@ export const createUser = user => {
       .then(response => response.json())
       .then(user => {
         dispatch(addUser(user))
-        dispatch(resetUserForm())
+
       })
+      .catch(error => console.log(error))
+  }
+}
+
+export const editUser = user => {
+  debugger
+  return dispatch => {
+    return fetch(`${API_URL}/users`, {
+      method: 'PATCH',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ user: user })
+    })
+      .then(response => {
+        debugger
+        response.json()
+      })
+      .then(user => dispatch(addUser(user)))
       .catch(error => console.log(error))
   }
 }
@@ -76,8 +96,15 @@ export const createSession = user => {
       .then(response => response.json())
       .then(user => {
         dispatch(addUser(user))
-        dispatch(resetUserForm())
+
       })
       .catch(error => console.log(error))
+  }
+}
+
+export const removeCurrentUser = () => {
+  return dispatch => {
+    dispatch(clearSession())
+    dispatch(resetUserForm())
   }
 }
