@@ -33,7 +33,7 @@ class SignIn extends Component {
 
   render() {
     return(
-      <SignInForm userFormData={this.props.userFormData} handleOnChange={this.handleOnChange} handleOnSubmit={this.handleOnSubmit} />
+      <SignInForm userFormData={this.props.userFormData} handleOnChange={this.handleOnChange} handleOnSubmit={this.handleOnSubmit} currentUser={this.props.currentUser} />
     )
   }
 }
