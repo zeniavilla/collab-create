@@ -3854,3 +3854,332 @@ Processing by SessionsController#create as JSON
 Completed 201 Created in 144ms (Views: 0.4ms | ActiveRecord: 3.9ms)
 
 
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 12:58:57 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 19:58:58.120623"], ["last_sign_in_at", "2017-09-01 19:53:55.323464"], ["sign_in_count", 63], ["updated_at", "2017-09-01 19:58:58.121361"], ["id", 20]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 146ms (Views: 0.3ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 12:59:20 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 19:59:20.811593"], ["last_sign_in_at", "2017-09-01 19:58:58.120623"], ["sign_in_count", 64], ["updated_at", "2017-09-01 19:59:20.812506"], ["id", 20]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 122ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:06:25 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:06:25.630140"], ["last_sign_in_at", "2017-09-01 19:59:20.811593"], ["sign_in_count", 65], ["updated_at", "2017-09-01 20:06:25.630863"], ["id", 20]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 144ms (Views: 0.3ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:11:40 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:11:40.771287"], ["last_sign_in_at", "2017-09-01 20:06:25.630140"], ["sign_in_count", 66], ["updated_at", "2017-09-01 20:11:40.772118"], ["id", 20]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 144ms (Views: 0.4ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:22:38 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:22:38.584035"], ["last_sign_in_at", "2017-09-01 20:11:40.771287"], ["sign_in_count", 67], ["updated_at", "2017-09-01 20:22:38.584899"], ["id", 20]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 131ms (Views: 0.4ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:23:31 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:23:31.969423"], ["last_sign_in_at", "2017-09-01 20:22:38.584035"], ["sign_in_count", 68], ["updated_at", "2017-09-01 20:23:31.970471"], ["id", 20]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 129ms (Views: 0.4ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:26:49 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:26:49.692735"], ["last_sign_in_at", "2017-09-01 20:23:31.969423"], ["sign_in_count", 69], ["updated_at", "2017-09-01 20:26:49.693578"], ["id", 20]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 129ms (Views: 0.5ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:36:20 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:36:20.846694"], ["last_sign_in_at", "2017-09-01 20:26:49.692735"], ["sign_in_count", 70], ["updated_at", "2017-09-01 20:36:20.847699"], ["id", 20]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 132ms (Views: 0.6ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:41:08 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:41:08.595064"], ["last_sign_in_at", "2017-09-01 20:36:20.846694"], ["sign_in_count", 71], ["updated_at", "2017-09-01 20:41:08.595935"], ["id", 20]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 130ms (Views: 0.6ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:48:39 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:48:39.238381"], ["last_sign_in_at", "2017-09-01 20:41:08.595064"], ["sign_in_count", 72], ["updated_at", "2017-09-01 20:48:39.239184"], ["id", 20]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 128ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:49:15 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:49:15.732864"], ["last_sign_in_at", "2017-09-01 20:48:39.238381"], ["sign_in_count", 73], ["updated_at", "2017-09-01 20:49:15.733687"], ["id", 20]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 150ms (Views: 0.4ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:49:55 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:49:55.851974"], ["last_sign_in_at", "2017-09-01 20:49:15.732864"], ["sign_in_count", 74], ["updated_at", "2017-09-01 20:49:55.852815"], ["id", 20]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 131ms (Views: 0.4ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:54:12 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:54:12.499389"], ["last_sign_in_at", "2017-09-01 20:49:55.851974"], ["sign_in_count", 75], ["updated_at", "2017-09-01 20:54:12.500224"], ["id", 20]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 148ms (Views: 0.5ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 13:59:37 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 20:59:37.862045"], ["last_sign_in_at", "2017-09-01 20:54:12.499389"], ["sign_in_count", 76], ["updated_at", "2017-09-01 20:59:37.863038"], ["id", 20]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 155ms (Views: 0.6ms | ActiveRecord: 3.8ms)
+
+
+Started PATCH "/api/users.json" for ::1 at 2017-09-01 13:59:47 -0700
+Processing by RegistrationsController#update as JSON
+  Parameters: {"user"=>{"name"=>"Andrea Johnson", "email"=>"andrea@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Andrea Johnson", "email"=>"andrea@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 14:00:45 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 21:00:45.831914"], ["last_sign_in_at", "2017-09-01 20:59:37.862045"], ["sign_in_count", 77], ["updated_at", "2017-09-01 21:00:45.832628"], ["id", 20]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 129ms (Views: 0.5ms | ActiveRecord: 3.3ms)
+
+
+Started PATCH "/api/users.json" for ::1 at 2017-09-01 14:01:02 -0700
+Processing by RegistrationsController#update as JSON
+  Parameters: {"user"=>{"name"=>"Andrea Johnson", "email"=>"andrea@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Andrea Johnson", "email"=>"andrea@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 14:09:13 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 21:09:13.605013"], ["last_sign_in_at", "2017-09-01 21:00:45.831914"], ["sign_in_count", 78], ["updated_at", "2017-09-01 21:09:13.605811"], ["id", 20]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 137ms (Views: 0.3ms | ActiveRecord: 3.8ms)
+
+
+Started PATCH "/api/users.json" for ::1 at 2017-09-01 14:09:35 -0700
+Processing by RegistrationsController#update as JSON
+  Parameters: {"user"=>{"name"=>"Andrea Johnson", "email"=>"andrea@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Andrea Johnson", "email"=>"andrea@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 14:12:24 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 21:12:25.026266"], ["last_sign_in_at", "2017-09-01 21:09:13.605013"], ["sign_in_count", 79], ["updated_at", "2017-09-01 21:12:25.027037"], ["id", 20]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 140ms (Views: 0.3ms | ActiveRecord: 3.4ms)
+
+
+Started PATCH "/api/users" for ::1 at 2017-09-01 14:12:40 -0700
+Processing by RegistrationsController#update as JSON
+  Parameters: {"user"=>{"name"=>"Andrea Johnson", "email"=>"andrea@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Andrea Johnson", "email"=>"andrea@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started PATCH "/api/users" for ::1 at 2017-09-01 14:17:39 -0700
+Processing by RegistrationsController#update as JSON
+  Parameters: {"user"=>{"name"=>"Andrea Johnson", "email"=>"andrea@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Andrea Johnson", "email"=>"andrea@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 14:24:35 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 21:24:35.872804"], ["last_sign_in_at", "2017-09-01 21:12:25.026266"], ["sign_in_count", 80], ["updated_at", "2017-09-01 21:24:35.873504"], ["id", 20]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 127ms (Views: 0.3ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-01 14:28:07 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-01 21:28:07.631853"], ["last_sign_in_at", "2017-09-01 21:24:35.872804"], ["sign_in_count", 81], ["updated_at", "2017-09-01 21:28:07.632532"], ["id", 20]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 144ms (Views: 0.4ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/api/users.json" for ::1 at 2017-09-01 14:35:08 -0700
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"name"=>"Cinammon Casey", "email"=>"cinnamon@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Cinammon Casey", "email"=>"cinnamon@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cinnamon@me.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Cinammon Casey"], ["email", "cinnamon@me.com"], ["encrypted_password", "$2a$11$M/MX40Z./FDc3Rp8BbqMh.vVR.S7W6HIP9oeosTtPCsG2x9MFZHrS"], ["created_at", "2017-09-01 21:35:08.890646"], ["updated_at", "2017-09-01 21:35:08.890646"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-09-01 21:35:08.895611"], ["last_sign_in_at", "2017-09-01 21:35:08.895611"], ["current_sign_in_ip", "::1/128"], ["last_sign_in_ip", "::1/128"], ["updated_at", "2017-09-01 21:35:08.896466"], ["id", 25]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 153ms (Views: 0.9ms | ActiveRecord: 6.3ms)
+
+
+Started PATCH "/api/users" for ::1 at 2017-09-01 14:36:32 -0700
+Processing by RegistrationsController#update as JSON
+  Parameters: {"user"=>{"name"=>"Cinammon Frost", "email"=>"cinnamon@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"Cinammon Frost", "email"=>"cinnamon@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-06 15:49:33 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrea@me.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-09-06 22:49:34.189915"], ["last_sign_in_at", "2017-09-01 21:28:07.631853"], ["sign_in_count", 82], ["updated_at", "2017-09-06 22:49:34.191105"], ["id", 20]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 163ms (Views: 0.6ms | ActiveRecord: 10.0ms)
+
+
+Started PATCH "/api/users" for ::1 at 2017-09-06 15:50:11 -0700
+Processing by RegistrationsController#update as JSON
+  Parameters: {"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]", "name"=>"Andrea Dickinson", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"andrea@me.com", "password"=>"[FILTERED]", "name"=>"Andrea Dickinson", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-06 15:59:51 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "session"=>{"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users.json" for ::1 at 2017-09-06 16:00:04 -0700
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-06 16:02:03 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "session"=>{"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-06 16:02:13 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "session"=>{"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users.json" for ::1 at 2017-09-06 16:03:45 -0700
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 9ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/users.json" for ::1 at 2017-09-06 16:04:56 -0700
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/users.json" for ::1 at 2017-09-06 16:06:06 -0700
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/users.json" for ::1 at 2017-09-06 16:07:34 -0700
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/users.json" for ::1 at 2017-09-06 16:07:56 -0700
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/users/sign_in.json" for ::1 at 2017-09-06 16:08:18 -0700
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "session"=>{"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
