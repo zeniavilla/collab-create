@@ -11,27 +11,33 @@ const UserSignUpForm = props => {
       <form onSubmit={handleOnSubmit}>
         <div className="form-field">
           <input type="text" id="name" placeholder="Name" onChange={handleOnChange} value={name || ''} />
+        </div>
+        <div className="form-error">
           {
             (errors) 
-            ? `Name ${errors.name}` 
+            ? `${errors.name}` 
             : null
           }
         </div>
 
         <div className="form-field">
           <input type="email" id="email" placeholder="Email" onChange={handleOnChange} value={email || ''} />
+        </div>
+        <div className="form-error">
           {
             (errors) 
-            ? `Email ${errors.email}` 
+            ? `${errors.email}` 
             : null
           }
         </div>
 
         <div className="field">
           <input type="password" id="password" placeholder="Password" onChange={handleOnChange} value={password || ''} />
+        </div>
+        <div className="form-error">
           {
             (errors) 
-            ? `Password ${errors.email}` 
+            ? `${errors.password}` 
             : null
           }
         </div>
