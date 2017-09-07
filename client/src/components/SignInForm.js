@@ -6,6 +6,10 @@ const SignInForm = props => {
 
   return(
     <form onSubmit={handleOnSubmit}>
+      <div className="form-error">
+        {props.currentUser.error}
+      </div>
+      
       <div className="form-field">
         <input type="email" id="email" placeholder="Email" onChange={handleOnChange} value={email || ''} />
       </div>
