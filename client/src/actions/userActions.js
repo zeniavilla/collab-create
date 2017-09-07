@@ -65,7 +65,6 @@ export const createUser = user => {
 }
 
 export const editUser = user => {
-  debugger
   return dispatch => {
     return fetch(`${API_URL}/users`, {
       method: 'PATCH',
@@ -75,10 +74,7 @@ export const editUser = user => {
       },
       body: JSON.stringify({ user: user })
     })
-      .then(response => {
-        debugger
-        response.json()
-      })
+      .then(response => response.json())
       .then(user => dispatch(addUser(user)))
       .catch(error => console.log(error))
   }
