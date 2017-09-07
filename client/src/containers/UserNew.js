@@ -41,7 +41,7 @@ class UserNew extends Component {
 
   render() {
     return (
-      <UserSignUpForm userFormData={this.props.userFormData} handleOnChange={this.handleOnChange} handleOnClick={this.handleOnClick} handleOnSubmit={this.handleOnSubmit} />
+      <UserSignUpForm userFormData={this.props.userFormData} handleOnChange={this.handleOnChange} handleOnClick={this.handleOnClick} handleOnSubmit={this.handleOnSubmit} currentUser={this.props.currentUser} />
     )
   }
 }
