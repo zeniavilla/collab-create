@@ -1,12 +1,29 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+import Service from '../components/Service';
+import { getServices } from '../actions/serviceActions';
 
 class Services extends Component {
+
+  componentDidMount = () => {
+    this.props.getServices();
+  }
+
   render() {
+    let renderServices = this.props.services.map(service =>
+      <Service service={service} />)
+      
     return(
       <div>
+        {renderServices}
       </div>
     )
   }
 }
 
-export default Services;
+const mapStateToProps = state => {
+  return ({ services: state.services })
+}
+
+export default connect(mapStateToProps, { getServices })(Services);
