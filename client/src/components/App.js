@@ -9,7 +9,6 @@ import UserNew from '../containers/UserNew';
 import UserProfileEdit from '../containers/UserProfileEdit';
 import SignIn from '../containers/SignIn';
 import SignOut from '../containers/SignOut';
-import FilteredServices from '../containers/FilteredServices';
 
 class App extends Component {
   render() {
@@ -19,7 +18,6 @@ class App extends Component {
           <NavCurrentUser />
           <div id="wrapper">
             <Route path="/services" component={ServiceCategories} />
-            <Route path='/services/:serviceName' component={FilteredServices} />
             <Route path="/signup" component={UserNew} />
             <Route path="/signin" component={SignIn} />
             <Route path="/signout" component={SignOut} />
