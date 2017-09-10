@@ -20,10 +20,10 @@ class App extends Component {
           <div id="wrapper">
             <Route path="/services" component={ServiceCategories} />
             <Route path='/services/:serviceName' component={FilteredServices} />
-            <Route path="/sign_up" component={UserNew} />
-            <Route path="/sign_in" component={SignIn} />
-            <Route path="/sign_out" component={SignOut} />
-            <Route path="/profile/:user_id" component={UserProfileEdit} />
+            <Route path="/signup" component={UserNew} />
+            <Route path="/signin" component={SignIn} />
+            <Route path="/signout" component={SignOut} />
+            <Route path="/profile/:userId" component={UserProfileEdit} />
           </div>
 
           <Footer />
