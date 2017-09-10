@@ -7,7 +7,7 @@ class FilteredServices extends Component {
 
   render() {
     const renderServices = this.props.services.map(service =>
-      <Service service={service} />)
+      <Service service={service} key={service.id} />)
       return(
         <div>
         {renderServices}
