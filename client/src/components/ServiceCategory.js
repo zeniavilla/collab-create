@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 
-const Service = props => {
+const ServiceCategory = props => {
   const { name } = props.service;
 
   return (
@@ -15,4 +15,4 @@ const Service = props => {
   )
 }
 
-export default Service;
+export default ServiceCategory;

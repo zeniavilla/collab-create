@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Service from '../components/Service';
+import ServiceCategory from '../components/ServiceCategory';
 import { getServices } from '../actions/serviceActions';
 import './Services.css';
 
-class Services extends Component {
+class ServiceCategories extends Component {
 
   componentDidMount = () => {
     this.props.getServices();
@@ -13,7 +13,7 @@ class Services extends Component {
 
   render() {
     let renderServices = this.props.services.map(service =>
-      <Service service={service} />)
+      <ServiceCategory service={service} />)
       
     return(
       <div>
@@ -27,4 +27,4 @@ const mapStateToProps = state => {
   return ({ services: state.services })
 }
 
-export default connect(mapStateToProps, { getServices })(Services);
+export default connect(mapStateToProps, { getServices })(ServiceCategories);
