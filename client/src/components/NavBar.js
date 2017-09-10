@@ -9,7 +9,7 @@ const NavBar = props => {
       <LinkContainer to={`/profile/${props.currentUser.id}`}>
         <NavItem eventKey={1}>Hey, {props.currentUser.name}</NavItem>
       </LinkContainer>
-      <LinkContainer to="/sign_out">
+      <LinkContainer to="/signout">
         <NavItem eventKey={2}>Sign Out</NavItem>
       </LinkContainer>
     </Nav>
@@ -17,10 +17,10 @@ const NavBar = props => {
 
   const guestLinks = (
     <Nav pullRight>
-      <LinkContainer to="/sign_in">
+      <LinkContainer to="/signin">
         <NavItem eventKey={1}>Sign In</NavItem>
       </LinkContainer>
-      <LinkContainer to="/sign_up">
+      <LinkContainer to="/signup">
         <NavItem eventKey={2}>Create Account</NavItem>
       </LinkContainer>
     </Nav>
