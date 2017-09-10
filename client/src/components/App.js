@@ -15,8 +15,8 @@ class App extends Component {
     return(
       <Router>
         <div>
+          <NavCurrentUser />
           <div id="wrapper">
-            <NavCurrentUser />
             <Route path="/services" component={Services} />
             <Route path="/sign_up" component={UserNew} />
             <Route path="/sign_in" component={SignIn} />
