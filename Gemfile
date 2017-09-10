@@ -24,6 +24,7 @@ gem 'omniauth'
 gem 'omniauth-instagram'
 gem 'instagram'
 gem 'omniauth-facebook'
+gem 'active_model_serializers'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
