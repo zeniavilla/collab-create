@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
 
-import ServiceCategory from '../components/ServiceCategory';
 import { getServices } from '../actions/serviceActions';
 import './Services.css';
+import ServiceCategory from '../components/ServiceCategory';
+import FilteredServices from '../containers/FilteredServices';
+
 
 class ServiceCategories extends Component {
 
@@ -13,12 +16,15 @@ class ServiceCategories extends Component {
 
   render() {
     let renderServices = this.props.services.map(service =>
-      <ServiceCategory service={service} />)
+      <ServiceCategory service={service} key={service.id} />)
       
     return(
-      <div>
-        {renderServices}
-      </div>
+      <Switch>
+        <Route path='/services/:serviceName' component={FilteredServices} />
+        <div>
+          {renderServices}
+        </div>
+      </Switch>
     )
   }
 }
