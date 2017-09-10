@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import Service from '../components/Service';
 import { getServices } from '../actions/serviceActions';
+import './Services.css';
 
 class Services extends Component {
 
