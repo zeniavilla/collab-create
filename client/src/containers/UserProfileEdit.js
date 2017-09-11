@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import UserProfileForm from '../components/UserProfileForm';
+import UserEditForm from '../components/UserEditForm';
 
 import { updateUserFormData, editUser } from '../actions/userActions';
 
@@ -24,7 +24,7 @@ class UserProfileEdit extends Component {
 
   render() {
     return (
-      <UserProfileForm currentUser={this.props.userFormData} handleOnChange={this.handleOnChange} handleOnSubmit={this.handleOnSubmit} />
+      <UserEditForm currentUser={this.props.userFormData} handleOnChange={this.handleOnChange} handleOnSubmit={this.handleOnSubmit} />
     )
   }
 }
