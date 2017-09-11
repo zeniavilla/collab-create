@@ -35,6 +35,13 @@ const clearSession = () => {
   }
 }
 
+const setUserService = userService => {
+  return {
+    type: 'SET_USER_SERVICE',
+    userService
+  }
+}
+
 // ** Async Actions **
 
 export const createOmniauthUser = provider => {
@@ -102,5 +109,14 @@ export const removeCurrentUser = () => {
   return dispatch => {
     dispatch(clearSession())
     dispatch(resetUserForm())
+  }
+}
+
+export const getSelectedUserService = userId => {
+  return dispatch => {
+    return fetch(`${API_URL}/users/${userId}`)
+      .then(response => response.json())
+      .then(userService => dispatch(setUserService(userService)))
+      .catch(error => console.log(error))
   }
 }
