@@ -9,6 +9,7 @@ import UserNew from '../containers/UserNew';
 import UserProfileEdit from '../containers/UserProfileEdit';
 import SignIn from '../containers/SignIn';
 import SignOut from '../containers/SignOut';
+import UserShow from '../containers/UserShow';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
             <Route path="/signin" component={SignIn} />
             <Route path="/signout" component={SignOut} />
             <Route path="/profile/:userId" component={UserProfileEdit} />
+            <Route path="/users/:userId" component={UserShow} />
           </div>
 
           <Footer />
