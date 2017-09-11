@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UserProfileForm = props => {
+const UserEditForm = props => {
   const { handleOnChange, handleOnSubmit } = props;
   const { name, email, password, password_confirmation } = props.currentUser;
 
@@ -29,4 +29,4 @@ const UserProfileForm = props => {
   )
 }
 
-export default UserProfileForm;
+export default UserEditForm;
