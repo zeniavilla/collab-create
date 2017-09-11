@@ -3,14 +3,14 @@ import React from 'react';
 const UserSignUpForm = props => {
   
   const { handleOnClick, handleOnChange, handleOnSubmit } = props;
-  const { name, email, password, password_confirmation } = props.userFormData;
+  const { name, email, password, password_confirmation, bio, bio_img, location, phone_number, website, instagram, likes } = props.userFormData;
   const { errors } = props.currentUser;
 
   return (
     <div>
       <form onSubmit={handleOnSubmit}>
         <div className="form-field">
-          <input type="text" id="name" placeholder="Name" onChange={handleOnChange} value={name || ''} />
+          <input type="text" id="name" placeholder="Full name" onChange={handleOnChange} value={name || ''} />
         </div>
         <div className="form-error">
           {
@@ -44,6 +44,72 @@ const UserSignUpForm = props => {
 
         <div className="form-field">
           <input type="password" id="password_confirmation" placeholder="Confirm password" onChange={handleOnChange} value={password_confirmation || ''} />
+        </div>
+
+        <div className="form-field">
+          <input type="text" id="bio" placeholder="Write a little about yourself." onChange={handleOnChange} value={bio || ''} />
+        </div>
+        <div className="form-error">
+          {
+            (errors) 
+            ? `${errors.bio}` 
+            : null
+          }
+        </div>
+
+        <div className="form-field">
+          <input type="text" id="bio_img" placeholder="Bio image" onChange={handleOnChange} value={bio_img || ''} />
+        </div>
+        <div className="form-error">
+          {
+            (errors) 
+            ? `${errors.bio_img}` 
+            : null
+          }
+        </div>
+
+        <div className="form-field">
+          <input type="text" id="location" placeholder="Location" onChange={handleOnChange} value={location || ''} />
+        </div>
+        <div className="form-error">
+          {
+            (errors) 
+            ? `${errors.location}` 
+            : null
+          }
+        </div>
+
+        <div className="form-field">
+          <input type="text" id="phone_number" placeholder="Phone number" onChange={handleOnChange} value={phone_number || ''} />
+        </div>
+        <div className="form-error">
+          {
+            (errors) 
+            ? `${errors.phone_number}` 
+            : null
+          }
+        </div>
+
+        <div className="form-field">
+          <input type="text" id="website" placeholder="Website" onChange={handleOnChange} value={website || ''} />
+        </div>
+        <div className="form-error">
+          {
+            (errors) 
+            ? `${errors.website}` 
+            : null
+          }
+        </div>
+
+        <div className="form-field">
+          <input type="text" id="instagram" placeholder="Instagram" onChange={handleOnChange} value={instagram || ''} />
+        </div>
+        <div className="form-error">
+          {
+            (errors) 
+            ? `${errors.instagram}` 
+            : null
+          }
         </div>
 
         <div className="form-action">
