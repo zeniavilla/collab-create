@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :services, except: [:new, :edit]
+    resources :users, only: [:show]
   end
 
   root 'welcome#index'
