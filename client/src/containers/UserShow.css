@@ -1,18 +1,18 @@
 .profile-bio-img {
   background-position: top center;
   background-size: cover;
-  border-radius: 100px;
+  border-radius: 5px;
   height: 200px;
   width: 200px;
 }
 
 .border-col {
-  border-left: 3px solid #e0d2e4;
+  border-left: 3px solid #d6eff7;
 }
 
 i.fa.profile-icon {
   font-size: 3em;
-  color: #e0d2e4;
+  color: #d6eff7;
   padding: 10px 20px 10px 0;
 }
 
