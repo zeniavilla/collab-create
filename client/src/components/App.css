@@ -6,7 +6,7 @@ html {
 }
 
 html, #root {
-  background-color: whitesmoke;
+  background-color: #fafafa;
 }
 
 body {
@@ -31,3 +31,12 @@ div#wrapper {
   max-width: 60%;
   padding: 75px;
 }
+
+a {
+  color: #db7b7b;
+}
+  a:hover {
+    color: #db7b7b;
+    opacity: .6;
+    text-decoration: none;
+  }
