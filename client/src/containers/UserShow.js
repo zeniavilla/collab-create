@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { getSelectedUserService } from '../actions/userActions';
 
 import UserPublicProfile from '../components/UserPublicProfile';
+import './UserShow.css';
 
 class UserShow extends Component {
   
