@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Lato|Open+Sans');
+
 html {
   min-height: 100%;
   position: relative;
@@ -5,6 +7,17 @@ html {
 
 html, #root {
   background-color: whitesmoke;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .7px;
+  line-height: 160%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600
 }
 
 @keyframes App-logo-spin {
@@ -16,5 +29,5 @@ div#wrapper {
   background-color: #fff;
   margin: 0 auto;
   max-width: 60%;
-  padding: 50px;
+  padding: 75px;
 }
