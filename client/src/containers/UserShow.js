@@ -15,7 +15,7 @@ class UserShow extends Component {
 
   render() {
     return (
-      <div>
+      <div className="clearfix">
         <UserPublicProfile user={this.props.selectedUserService} />
       </div>
     )
