@@ -5,3 +5,12 @@
   height: 200px;
   width: 200px;
 }
+
+.border-col {
+  border-left: 3px solid #e0d2e4;
+}
+
+i.fa.profile-icon {
+  font-size: 3em;
+  color: #e0d2e4;
+}
