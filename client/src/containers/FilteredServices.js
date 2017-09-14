@@ -9,7 +9,7 @@ class FilteredServices extends Component {
     const renderServices = this.props.services.map(service =>
       <Service service={service} key={service.id} />)
       return(
-        <div>
+        <div className="clearfix">
         {renderServices}
       </div>
     )

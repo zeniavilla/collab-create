@@ -21,7 +21,7 @@ class ServiceCategories extends Component {
     return(
       <Switch>
         <Route path='/services/:serviceName' component={FilteredServices} />
-        <div>
+        <div className="clearfix">
           {renderServices}
         </div>
       </Switch>
