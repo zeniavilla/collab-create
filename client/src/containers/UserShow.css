@@ -13,4 +13,17 @@
 i.fa.profile-icon {
   font-size: 3em;
   color: #e0d2e4;
+  padding: 10px 20px 10px 0;
+}
+
+.profile-section {
+  padding: 10px 0 10px 70px;
+}
+
+.row {
+  margin-bottom: 3%;
+}
+
+.center {
+  text-align: center;
 }
