@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 
 const UserPublicProfile = props => {
-  const { id, name, email, bio, bio_img, phone_number, website, instagram, location, services } = props.user;
+  const { id, name, email, bio, bio_img, phone_number, website, instagram, location, services, quote } = props.user;
   
   const bioBackgroundImg = {
     backgroundImage: `url(${bio_img})`
@@ -19,9 +19,10 @@ const UserPublicProfile = props => {
             <Button href={`mailto:${email}`}><i className="fa fa-envelope-o"></i></Button>
           </div>
         </Col>
-        <Col sm={9} className="center-vertically">
+        <Col sm={9}>
           <h1>Meet</h1>
           <h2>{name}</h2>
+          <div className="quote-text">"{quote}"</div>
         </Col>
       </Row>
 
