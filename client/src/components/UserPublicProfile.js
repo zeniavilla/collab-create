@@ -70,6 +70,18 @@ const UserPublicProfile = props => {
           </div>
         </Col>
       </Row>
+
+      <Row>
+      <Col sm={2} className="center">
+          <i className="fa fa-user-plus profile-icon"></i>
+        </Col>
+        <Col sm={10}  className="border-col">
+          <div className="profile-section">
+            <div><a href={`http://${website}`} target="_blank">Website</a></div>
+            <div><a href={`http://instagram.com/${instagram}`}target="_blank">Instagram</a></div>
+          </div>
+        </Col>
+      </Row>
     </div>
   )
 }
