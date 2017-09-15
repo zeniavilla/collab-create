@@ -40,6 +40,9 @@ a {
     opacity: .6;
     text-decoration: none;
   }
+  a:focus, a:visited {
+    color: #db7b7b;
+  }
 
 .quote-text {
   font-style: italic;
