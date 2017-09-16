@@ -1,5 +1,6 @@
 .service-img, .user-img {
-  background-color: lightblue;
+  background-size: cover;
+  background-position: top center;
   margin: 5% 0 5%;
   padding-bottom: 75%;
   text-align: center;
