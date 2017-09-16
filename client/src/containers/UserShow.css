@@ -20,10 +20,24 @@ i.fa.profile-icon {
   padding: 10px 0 10px 70px;
 }
 
+div.profile-header {
+  margin-bottom: 6%;
+}
+
 .row {
   margin-bottom: 3%;
 }
 
 .center {
   text-align: center;
+}
+
+.row h1 {
+  font-family: 'Kaushan Script';
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.row h2 {
+  margin-top: 0;
 }
