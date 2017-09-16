@@ -15,7 +15,9 @@ const ServiceCategory = props => {
       <Col sm={4}>
         <Link to={`/services/${slug}`}>
           <div className="service-img" style={serviceBackground}>
-            {name}
+            <div className="picture-overlay card-title">
+              {name}
+            </div>
           </div>
         </Link>
       </Col>
