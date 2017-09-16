@@ -4,14 +4,17 @@ import { Link } from 'react-router-dom';
 import { Col } from 'react-bootstrap';
 
 const ServiceCategory = props => {
-  const { name } = props.service;
+  const { name, img_url } = props.service;
   const slug = name.toLowerCase().split(' ').join('-');
+  const serviceBackground = {
+    backgroundImage: `url(${img_url})`
+  };
 
   return (
     <div>
-      <Col sm={3}>
+      <Col sm={4}>
         <Link to={`/services/${slug}`}>
-          <div className="service-img">
+          <div className="service-img" style={serviceBackground}>
             {name}
           </div>
         </Link>
