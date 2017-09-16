@@ -6,6 +6,15 @@
   text-align: center;
 }
 
+div.card-title {
+  color: #EAEAEA;
+  font: 600 1.5em/100% 'Open Sans', sans-serif;
+  letter-spacing: 4px;
+  padding-top: 10px;
+  text-shadow: 1px 1px 4px #585757;
+  text-transform: lowercase;
+}
+
 .picture-overlay {
   background-color: rgba(250, 250, 250, .5);
   bottom: 15px;
