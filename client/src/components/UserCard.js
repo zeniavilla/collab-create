@@ -4,13 +4,16 @@ import { Link } from 'react-router-dom';
 import { Col } from 'react-bootstrap';
 
 const UserCard = props => {
-  const { name, id, email } = props.user;
+  const { name, id, bio_img } = props.user;
+  const userBackground = {
+    backgroundImage: `url(${bio_img})`
+  }
 
   return (
     <div>
       <Col sm={3}>
         <Link to={`/users/${id}`}>
-          <div className="user-img">
+          <div className="user-img" style={userBackground}>
             {name}
           </div>
         </Link>
