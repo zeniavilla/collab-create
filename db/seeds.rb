@@ -9,13 +9,22 @@
 Service.destroy_all
 
 DATA = {
+  :service_keys => ['name', 'img_url']
   :services => [
-    'Food Styling', 'Hair', 'Makeup', 'Model', 'Photography', 'Videography', 'Wardrobe Styling'
+    ['Food Styling', 'https://static.pexels.com/photos/574111/pexels-photo-574111.jpeg'],
+    ['Hair', 'https://static.pexels.com/photos/54566/pexels-photo-54566.jpeg'],
+    ['Makeup', 'https://static.pexels.com/photos/324655/pexels-photo-324655.jpeg'],
+    ['Model', 'https://static.pexels.com/photos/235462/pexels-photo-235462.jpeg'],
+    ['Photography', 'https://static.pexels.com/photos/108157/pexels-photo-108157.jpeg'],
+    ['Videography', 'https://static.pexels.com/photos/274959/pexels-photo-274959.jpeg'],
+    ['Wardrobe Styling', 'https://static.pexels.com/photos/318236/pexels-photo-318236.jpeg']
   ]
 }
 
 DATA[:services].each do |service|
   new_service = Service.new
-  new_service.send("name=", service)
+  service.each_with_index do |attribute, i|
+    new_service.send(DATA[:service_keys][i] + "=", attribute)
+  end
   new_service.save
 end
