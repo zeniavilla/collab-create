@@ -11,10 +11,12 @@ const UserCard = props => {
 
   return (
     <div>
-      <Col sm={3}>
+      <Col sm={4}>
         <Link to={`/users/${id}`}>
           <div className="user-img" style={userBackground}>
-            {name}
+            <div className="picture-overlay card-title">
+              {name}
+            </div>
           </div>
         </Link>
       </Col>
