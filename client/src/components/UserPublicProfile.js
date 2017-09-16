@@ -16,7 +16,7 @@ const UserPublicProfile = props => {
       <Row className="profile-header">
         <Col sm={3}>
           <div className="profile-bio-img" style={bioBackgroundImg}>
-            <Button href={`mailto:${email}`}><i className="fa fa-envelope-o"></i></Button>
+            <Button href={`mailto:${email}`} title={`Email ${name}`}><i className="fa fa-envelope-o"></i></Button>
           </div>
         </Col>
         <Col sm={9}>
@@ -65,8 +65,8 @@ const UserPublicProfile = props => {
         </Col>
         <Col sm={10}  className="border-col">
           <div className="profile-section">
-            <div><a href={`mailto:${email}`}>{email}</a></div>
-            <div><a href={`tel:${phone_number}`}>{phone_number}</a></div>
+            <div><a href={`mailto:${email}`} title={`Email ${name}`}>{email}</a></div>
+            <div><a href={`tel:${phone_number}`} title={`Call ${name}`}>{phone_number}</a></div>
           </div>
         </Col>
       </Row>
@@ -77,8 +77,8 @@ const UserPublicProfile = props => {
         </Col>
         <Col sm={10}  className="border-col">
           <div className="profile-section">
-            <div><a href={`http://${website}`} target="_blank">Website</a></div>
-            <div><a href={`http://instagram.com/${instagram}`}target="_blank">Instagram</a></div>
+            <div><a href={`http://${website}`} target="_blank" title={`Visit ${name}'s site`}>Website</a></div>
+            <div><a href={`http://instagram.com/${instagram}`}target="_blank" title={`Check out ${name}'s Instagram`}>Instagram</a></div>
           </div>
         </Col>
       </Row>
