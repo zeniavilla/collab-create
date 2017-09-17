@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import UserSignUpForm from '../components/UserSignUpForm';
 
 import { updateUserFormData, createOmniauthUser, createUser } from '../actions/userActions';
+import { getServices } from '../actions/serviceActions';
 
 class UserNew extends Component {
   
@@ -15,12 +16,20 @@ class UserNew extends Component {
   
   handleOnChange = event => {
     const { id, value } = event.target;
-
+    let index;
+    
     const currentUserFormData = Object.assign({},
-    this.props.userFormData, {
-      [id]: value
-    })
-
+      this.props.userFormData, {
+        [id]: value
+      })
+      
+      if (event.target.checked) {
+        this.props.userFormData['service_ids'].push(event.target.value);
+      } else {
+        index = this.props.userFormData['service_ids'].indexOf(event.target.value)
+        this.props.userFormData['service_ids'].splice(index, 1);
+      }
+      
     this.props.updateUserFormData(currentUserFormData);
   }
 
@@ -29,6 +38,10 @@ class UserNew extends Component {
     const { createUser } = this.props;
 
     createUser(this.props.userFormData);
+  }
+
+  componentDidMount = () => {
+    this.props.getServices();
   }
   
   componentDidUpdate = (prevProps, prevState) => {
@@ -41,7 +54,7 @@ class UserNew extends Component {
 
   render() {
     return (
-      <UserSignUpForm userFormData={this.props.userFormData} handleOnChange={this.handleOnChange} handleOnClick={this.handleOnClick} handleOnSubmit={this.handleOnSubmit} currentUser={this.props.currentUser} />
+      <UserSignUpForm userFormData={this.props.userFormData} handleOnChange={this.handleOnChange} handleOnClick={this.handleOnClick} handleOnSubmit={this.handleOnSubmit} currentUser={this.props.currentUser} services={this.props.services} />
     )
   }
 }
@@ -49,8 +62,9 @@ class UserNew extends Component {
 const mapStateToProps = state => {
   return ({ 
     userFormData: state.userFormData,
-    currentUser: state.currentUser
+    currentUser: state.currentUser,
+    services: state.services
   })
 }
 
-export default connect (mapStateToProps, { updateUserFormData, createOmniauthUser, createUser })(UserNew);
+export default connect (mapStateToProps, { updateUserFormData, createOmniauthUser, createUser, getServices })(UserNew);
