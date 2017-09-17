@@ -19,7 +19,7 @@ class UserProfileEdit extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    this.props.editUser(this.props.userFormData);
+    this.props.editUser(this.props.userFormData, this.props.currentUser.id);
   }
 
   render() {
