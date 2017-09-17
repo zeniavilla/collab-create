@@ -7,7 +7,7 @@
 }
 
 div.card-title {
-  color: #EAEAEA;
+  color: #eaeaea;
   font: 600 1.5em/100% 'Open Sans', sans-serif;
   letter-spacing: 4px;
   padding-top: 10px;
@@ -16,6 +16,7 @@ div.card-title {
 }
 
 .picture-overlay {
+  -webkit-transition: background-color 2s;
   background-color: rgba(250, 250, 250, .5);
   bottom: 15px;
   left: 15px;
@@ -24,3 +25,7 @@ div.card-title {
   top: 15px;
   z-index: 9999;
 }
+  .picture-overlay:hover {
+    background-color: rgba(250, 250, 250, .2);
+    transition: background-color .5s ease-in-out;
+  }
