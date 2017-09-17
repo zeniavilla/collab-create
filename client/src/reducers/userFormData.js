@@ -3,6 +3,12 @@ const initialState = {
   email: '',
   password: '',
   password_confirmation: '',
+  bio: '',
+  bio_img: '',
+  location: '',
+  phone_number: '',
+  website: '',
+  instagram: '',
   service_ids: []
 }
 
