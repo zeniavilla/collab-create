@@ -2,7 +2,7 @@ import React from 'react';
 
 const UserSignUpForm = props => {
   
-  const { handleOnClick, handleOnChange, handleOnSubmit } = props;
+  const { handleOnClick, handleOnChange, handleOnSubmit, services } = props;
   const { name, email, password, password_confirmation, bio, bio_img, location, phone_number, website, instagram, likes } = props.userFormData;
   const { errors } = props.currentUser;
 
@@ -110,6 +110,18 @@ const UserSignUpForm = props => {
             ? `${errors.instagram}` 
             : null
           }
+        </div>
+
+        <div className="form-field">
+          {
+            services.map(service => 
+              <span className="form-checkboxes">
+                {service.name} 
+                <input type="checkbox" name={service.name} value={service.id} onChange={handleOnChange} />
+              </span>
+            )
+          }
+          
         </div>
 
         <div className="form-action">
