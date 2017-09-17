@@ -71,9 +71,9 @@ export const createUser = user => {
   }
 }
 
-export const editUser = user => {
+export const editUser = (user, userId) => {
   return dispatch => {
-    return fetch(`${API_URL}/users`, {
+    return fetch(`${API_URL}/users/${userId}`, {
       method: 'PATCH',
       headers: {
         'Accept': 'application/json',
