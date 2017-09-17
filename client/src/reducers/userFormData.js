@@ -2,7 +2,8 @@ const initialState = {
   name: '',
   email: '',
   password: '',
-  password_confirmation: ''
+  password_confirmation: '',
+  service_ids: []
 }
 
 export const userFormData = (state = initialState, action) => {
