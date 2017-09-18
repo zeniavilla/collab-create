@@ -2,7 +2,6 @@ const initialState = {
   name: '',
   email: '',
   password: '',
-  password_confirmation: '',
   bio: '',
   bio_img: '',
   location: '',
