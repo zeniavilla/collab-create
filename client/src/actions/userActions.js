@@ -82,7 +82,10 @@ export const editUser = (user, userId) => {
       body: JSON.stringify({ user: user })
     })
       .then(response => response.json())
-      .then(user => dispatch(addUser(user)))
+      .then(user => {
+        dispatch(addUser(user))
+        dispatch(resetUserForm())
+      })
       .catch(error => console.log(error))
   }
 }
@@ -99,7 +102,7 @@ export const createSession = user => {
       .then(response => response.json())
       .then(user => {
         dispatch(addUser(user))
-
+        dispatch(resetUserForm())
       })
       .catch(error => console.log(error))
   }
