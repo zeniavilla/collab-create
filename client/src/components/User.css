@@ -55,17 +55,18 @@ form {
   }
 
 .form-action {
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 button.btn-form {
+  -webkit-transition: background-color 2s;
   background-color: #db7b7b;
-  border: 1px solid #F69D9D;
+  border: 1px solid #f69d9d;
   border-radius: 5px;
   height: 45px;
   width: 20%;
 }
   button.btn-form:hover {
-    opacity: .7;
-    transition: opacity 1s ease-in-out;
+    background-color: #f69d9d;
+    transition: background-color 1s ease-in-out;
   }
