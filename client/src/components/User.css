@@ -1,3 +1,23 @@
+field {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  padding: 22px;
+}
+
+::-ms-input-placeholder {
+  padding: 22px;
+}
+
+::-moz-placeholder {
+  padding: 22px;
+}
+
+::-webkit-input-placeholder {
+  padding: 22px;
+}
+
 .form-field input:not([type="checkbox"]) {
   background-color: #e8e8e8;
   border: none;
@@ -8,6 +28,7 @@
 }
 
 .form-field-check {
+  margin: 0 auto;
   width: 50%;
 }
 
@@ -26,7 +47,9 @@
 }
   .form-field-check input[type=checkbox]:hover {
     background-color: #db7b7b;
+    border: none;
   }
   .form-field-check input[type=checkbox]:checked {
     background-color: #db7b7b;
+    border: none;
   }
