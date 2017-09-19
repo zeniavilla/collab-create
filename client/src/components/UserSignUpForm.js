@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './User.css';
+
 const UserSignUpForm = props => {
   
   const { handleOnClick, handleOnChange, handleOnSubmit, services } = props;
@@ -31,7 +33,7 @@ const UserSignUpForm = props => {
           }
         </div>
 
-        <div className="field">
+        <div className="form-field">
           <input type="password" id="password" placeholder="Password" onChange={handleOnChange} value={password || ''} />
         </div>
         <div className="form-error">
@@ -112,7 +114,7 @@ const UserSignUpForm = props => {
           }
         </div>
 
-        <div className="form-field">
+        <div className="form-field-check">
           {
             services.map(service => 
               <span className="form-checkboxes">
