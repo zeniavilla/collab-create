@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Lato|Open+Sans|Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Kaushan+Script');
 
 html {
   min-height: 100%;
@@ -46,4 +46,12 @@ a {
 
 .quote-text {
   font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin-center {
+  margin: 0 auto;
 }
