@@ -1,4 +1,4 @@
-field {
+form {
   text-align: center;
 }
 
@@ -46,10 +46,26 @@ field {
   width: 20px;
 }
   .form-field-check input[type=checkbox]:hover {
-    background-color: #db7b7b;
+    background-color: #d6eff7;
     border: none;
   }
   .form-field-check input[type=checkbox]:checked {
-    background-color: #db7b7b;
+    background-color: #d6eff7;
     border: none;
+  }
+
+.form-action {
+  margin-top: 2%;
+}
+
+button.btn-form {
+  background-color: #db7b7b;
+  border: 1px solid #F69D9D;
+  border-radius: 5px;
+  height: 45px;
+  width: 20%;
+}
+  button.btn-form:hover {
+    opacity: .7;
+    transition: opacity 1s ease-in-out;
   }
