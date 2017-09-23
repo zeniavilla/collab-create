@@ -10,7 +10,8 @@ const UserSignUpForm = props => {
 
   return (
     <div>
-      <form onSubmit={handleOnSubmit}>
+      <form className="user-form" onSubmit={handleOnSubmit}>
+        <label htmlFor="name">Full name</label>
         <div className="form-field">
           <input type="text" id="name" placeholder="Full name" onChange={handleOnChange} value={name || ''} />
         </div>
@@ -21,7 +22,8 @@ const UserSignUpForm = props => {
             : null
           }
         </div>
-
+        
+        <label htmlFor="email">Email</label>
         <div className="form-field">
           <input type="email" id="email" placeholder="Email" onChange={handleOnChange} value={email || ''} />
         </div>
@@ -32,7 +34,8 @@ const UserSignUpForm = props => {
             : null
           }
         </div>
-
+        
+        <label htmlFor="password">Password</label>
         <div className="form-field">
           <input type="password" id="password" placeholder="Password" onChange={handleOnChange} value={password || ''} />
         </div>
@@ -44,10 +47,12 @@ const UserSignUpForm = props => {
           }
         </div>
 
+        <label htmlFor="password_confirmation">Confirm password</label>
         <div className="form-field">
           <input type="password" id="password_confirmation" placeholder="Confirm password" onChange={handleOnChange} value={password_confirmation || ''} />
         </div>
 
+        <label htmlFor="bio">Introduce yourself to fellow creatives</label>
         <div className="form-field">
           <input type="text" id="bio" placeholder="Write a little about yourself." onChange={handleOnChange} value={bio || ''} />
         </div>
@@ -59,6 +64,7 @@ const UserSignUpForm = props => {
           }
         </div>
 
+        <label htmlFor="bio_img">Bio image</label>
         <div className="form-field">
           <input type="text" id="bio_img" placeholder="Bio image" onChange={handleOnChange} value={bio_img || ''} />
         </div>
@@ -70,6 +76,7 @@ const UserSignUpForm = props => {
           }
         </div>
 
+        <label htmlFor="location">Location</label>
         <div className="form-field">
           <input type="text" id="location" placeholder="Location" onChange={handleOnChange} value={location || ''} />
         </div>
@@ -81,6 +88,7 @@ const UserSignUpForm = props => {
           }
         </div>
 
+        <label htmlFor="phone_number">Phone number</label>
         <div className="form-field">
           <input type="text" id="phone_number" placeholder="Phone number" onChange={handleOnChange} value={phone_number || ''} />
         </div>
@@ -92,6 +100,7 @@ const UserSignUpForm = props => {
           }
         </div>
 
+        <label htmlFor="website">Website</label>
         <div className="form-field">
           <input type="text" id="website" placeholder="Website" onChange={handleOnChange} value={website || ''} />
         </div>
@@ -103,6 +112,7 @@ const UserSignUpForm = props => {
           }
         </div>
 
+        <label htmlFor="instagram">Instagram username</label>
         <div className="form-field">
           <input type="text" id="instagram" placeholder="Instagram" onChange={handleOnChange} value={instagram || ''} />
         </div>
@@ -114,6 +124,7 @@ const UserSignUpForm = props => {
           }
         </div>
 
+        <label>What services do you provide?</label>
         <div className="form-field-check">
           {
             services.map(service => 
