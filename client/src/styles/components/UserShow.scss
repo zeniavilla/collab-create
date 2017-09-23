@@ -1,3 +1,5 @@
+@import '../shared.scss';
+
 .profile-bio-img {
   background-position: top center;
   background-size: cover;
@@ -7,12 +9,12 @@
 }
 
 .border-col {
-  border-left: 3px solid #d6eff7;
+  border-left: 3px solid $primary-blue;
 }
 
 i.fa.profile-icon {
   font-size: 3em;
-  color: #d6eff7;
+  color: $primary-blue;
   padding: 10px 20px 10px 0;
 }
 
@@ -26,14 +28,14 @@ div.profile-header {
 
 .row {
   margin-bottom: 3%;
-}
+  
+  &h1 {
+    font-family: $cursive-font;
+    font-size: 3em;
+    margin-bottom: 0;
+  }
 
-.row h1 {
-  font-family: 'Kaushan Script';
-  font-size: 3em;
-  margin-bottom: 0;
-}
-
-.row h2 {
-  margin-top: 0;
+  &h2 {
+    margin-top: 0;
+  }
 }

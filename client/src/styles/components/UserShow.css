@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans|Kaushan+Script");
 .profile-bio-img {
   background-position: top center;
   background-size: cover;
@@ -21,11 +22,9 @@ div.profile-header {
 
 .row {
   margin-bottom: 3%; }
-
-.row h1 {
-  font-family: 'Kaushan Script';
-  font-size: 3em;
-  margin-bottom: 0; }
-
-.row h2 {
-  margin-top: 0; }
+  .rowh1 {
+    font-family: "Kaushan Script", sans-serif;
+    font-size: 3em;
+    margin-bottom: 0; }
+  .rowh2 {
+    margin-top: 0; }
