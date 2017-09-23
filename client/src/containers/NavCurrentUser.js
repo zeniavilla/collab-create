@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import './Nav.css';
+import '../styles/components/Nav.css';
 import NavBar from '../components/NavBar';
 
 class NavCurrentUser extends Component {

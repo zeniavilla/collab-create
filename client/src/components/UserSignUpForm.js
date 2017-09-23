@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './User.css';
+import '../styles/components/UserForm.css';
 
 const UserSignUpForm = props => {
   

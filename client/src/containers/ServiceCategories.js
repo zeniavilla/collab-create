@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 
 import { getServices } from '../actions/serviceActions';
-import './Services.css';
+import '../styles/components/Services.css';
 import ServiceCategory from '../components/ServiceCategory';
 import FilteredServices from '../containers/FilteredServices';
 

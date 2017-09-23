@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Kaushan+Script');
 
+$primary-font: 'Open Sans', sans-serif;
+$title-font: 'Lato', sans-serif;
+$primary-blue: #d6eff7;
+$primary-pink: #db7b7b;
+$primary-green: #80cbc6;
+
 html {
   min-height: 100%;
   position: relative;
@@ -10,13 +16,13 @@ html, #root {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $primary-font;
   letter-spacing: .7px;
   line-height: 160%;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Lato', sans-serif;
+  font-family: $title-font;
   font-weight: 600
 }
 
@@ -33,16 +39,16 @@ div#wrapper {
 }
 
 a {
-  color: #db7b7b;
-}
-  a:hover {
-    color: #db7b7b;
+  color: $primary-pink;
+  &:hover {
+    color: $primary-pink;
     opacity: .6;
     text-decoration: none;
+  };
+  &:focus, &:visited {
+    color: $primary-pink;
   }
-  a:focus, a:visited {
-    color: #db7b7b;
-  }
+}
 
 .quote-text {
   font-style: italic;

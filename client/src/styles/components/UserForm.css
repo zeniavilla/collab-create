@@ -1,0 +1,62 @@
+form {
+  text-align: center; }
+
+:-moz-placeholder {
+  padding: 22px; }
+
+::-ms-input-placeholder {
+  padding: 22px; }
+
+::-moz-placeholder {
+  padding: 22px; }
+
+::-webkit-input-placeholder {
+  padding: 22px; }
+
+.form-field input:not([type="checkbox"]) {
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  margin-bottom: 3%;
+  width: 50%; }
+
+.form-field-check {
+  margin: 0 auto;
+  width: 50%; }
+
+.form-field-check input[type=checkbox] {
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5em;
+  height: 20px;
+  margin: 5px 25px 10px 10px;
+  outline: none;
+  vertical-align: middle;
+  width: 20px; }
+
+.form-field-check input[type=checkbox]:hover {
+  background-color: #d6eff7;
+  border: none; }
+
+.form-field-check input[type=checkbox]:checked {
+  background-color: #d6eff7;
+  border: none; }
+
+.form-action {
+  margin-top: 3%; }
+
+button.btn-form {
+  -webkit-transition: background-color 2s;
+  background-color: #db7b7b;
+  border: 1px solid #f69d9d;
+  border-radius: 5px;
+  height: 45px;
+  width: 20%; }
+
+button.btn-form:hover {
+  background-color: #f69d9d;
+  transition: background-color 1s ease-in-out; }

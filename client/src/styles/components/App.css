@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans|Kaushan+Script");
+html {
+  min-height: 100%;
+  position: relative; }
+
+html, #root {
+  background-color: #fafafa; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: .7px;
+  line-height: 160%; }
+
+h1, h2, h3, h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+div#wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 75px; }
+
+a {
+  color: #db7b7b; }
+  a:hover {
+    color: #db7b7b;
+    opacity: .6;
+    text-decoration: none; }
+  a:focus, a:visited {
+    color: #db7b7b; }
+
+.quote-text {
+  font-style: italic; }
+
+.center {
+  text-align: center; }
+
+.margin-center {
+  margin: 0 auto; }
