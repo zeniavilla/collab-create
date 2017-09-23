@@ -1,25 +1,16 @@
+@import '../shared.scss';
+@import './App.scss';
+
 form {
-  text-align: center;
+  @extend .center;
 }
 
-:-moz-placeholder {
-  padding: 22px;
-}
-
-::-ms-input-placeholder {
-  padding: 22px;
-}
-
-::-moz-placeholder {
-  padding: 22px;
-}
-
-::-webkit-input-placeholder {
-  padding: 22px;
+input {
+  padding-left: 22px;
 }
 
 .form-field input:not([type="checkbox"]) {
-  background-color: #e8e8e8;
+  background-color: $form-background;
   border: none;
   border-radius: 5px;
   height: 50px;
@@ -28,14 +19,14 @@ form {
 }
 
 .form-field-check {
-  margin: 0 auto;
+  @extend .margin-center;
   width: 50%;
 }
 
 .form-field-check input[type=checkbox] {
   -webkit-appearance: none;
   background-color: white;
-  border: 1px solid #ddd;
+  border: 1px solid $form-background;
   border-radius: 50%;
   cursor: pointer;
   font-size: 1.5em;
@@ -44,15 +35,12 @@ form {
   outline: none;
   vertical-align: middle;
   width: 20px;
+
+  &:hover, &:checked {
+    background-color: $primary-blue;
+    border: none;
+  }
 }
-  .form-field-check input[type=checkbox]:hover {
-    background-color: #d6eff7;
-    border: none;
-  }
-  .form-field-check input[type=checkbox]:checked {
-    background-color: #d6eff7;
-    border: none;
-  }
 
 .form-action {
   margin-top: 3%;
@@ -60,13 +48,14 @@ form {
 
 button.btn-form {
   -webkit-transition: background-color 2s;
-  background-color: #db7b7b;
-  border: 1px solid #f69d9d;
+  background-color: $primary-pink;
+  border: 1px solid $secondary-pink;
   border-radius: 5px;
   height: 45px;
   width: 20%;
-}
-  button.btn-form:hover {
-    background-color: #f69d9d;
+  
+  &:hover {
+    background-color: $secondary-pink;
     transition: background-color 1s ease-in-out;
   }
+}

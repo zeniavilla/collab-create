@@ -1,17 +1,52 @@
-form {
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans|Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans|Kaushan+Script");
+html {
+  min-height: 100%;
+  position: relative; }
+
+html, #root {
+  background-color: #fafafa; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: .7px;
+  line-height: 160%; }
+
+h1, h2, h3, h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+div#wrapper {
+  background-color: #fff;
+  max-width: 60%;
+  padding: 75px; }
+
+a {
+  color: #db7b7b; }
+  a:hover {
+    color: #db7b7b;
+    opacity: .6;
+    text-decoration: none; }
+  a:focus, a:visited {
+    color: #db7b7b; }
+
+.quote-text {
+  font-style: italic; }
+
+.center, form {
   text-align: center; }
 
-:-moz-placeholder {
-  padding: 22px; }
+.margin-center, div#wrapper, .form-field-check {
+  margin: 0 auto; }
 
-::-ms-input-placeholder {
-  padding: 22px; }
-
-::-moz-placeholder {
-  padding: 22px; }
-
-::-webkit-input-placeholder {
-  padding: 22px; }
+input {
+  padding-left: 22px; }
 
 .form-field input:not([type="checkbox"]) {
   background-color: #e8e8e8;
@@ -22,13 +57,12 @@ form {
   width: 50%; }
 
 .form-field-check {
-  margin: 0 auto;
   width: 50%; }
 
 .form-field-check input[type=checkbox] {
   -webkit-appearance: none;
   background-color: white;
-  border: 1px solid #ddd;
+  border: 1px solid #e8e8e8;
   border-radius: 50%;
   cursor: pointer;
   font-size: 1.5em;
@@ -37,14 +71,9 @@ form {
   outline: none;
   vertical-align: middle;
   width: 20px; }
-
-.form-field-check input[type=checkbox]:hover {
-  background-color: #d6eff7;
-  border: none; }
-
-.form-field-check input[type=checkbox]:checked {
-  background-color: #d6eff7;
-  border: none; }
+  .form-field-check input[type=checkbox]:hover, .form-field-check input[type=checkbox]:checked {
+    background-color: #d6eff7;
+    border: none; }
 
 .form-action {
   margin-top: 3%; }
@@ -56,7 +85,6 @@ button.btn-form {
   border-radius: 5px;
   height: 45px;
   width: 20%; }
-
-button.btn-form:hover {
-  background-color: #f69d9d;
-  transition: background-color 1s ease-in-out; }
+  button.btn-form:hover {
+    background-color: #f69d9d;
+    transition: background-color 1s ease-in-out; }
