@@ -1,14 +1,17 @@
+@import '../shared.scss';
+@import './App.scss';
+
 .service-img, .user-img {
+  @extend .center;
   background-size: cover;
   background-position: top center;
   margin: 5% 0 5%;
   padding-bottom: 75%;
-  text-align: center;
 }
 
 div.card-title {
   color: #eaeaea;
-  font: 600 1.5em/100% 'Open Sans', sans-serif;
+  font: 600 1.5em/100% $primary-font;
   letter-spacing: 4px;
   padding-top: 10px;
   text-shadow: 1px 1px 4px #585757;
@@ -24,8 +27,9 @@ div.card-title {
   right: 15px;
   top: 15px;
   z-index: 9999;
-}
-  .picture-overlay:hover {
+
+  &:hover {
     background-color: rgba(250, 250, 250, .2);
     transition: background-color .5s ease-in-out;
   }
+}
