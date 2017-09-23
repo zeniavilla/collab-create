@@ -5,7 +5,7 @@ html {
   position: relative; }
 
 html, #root {
-  background-color: #fafafa; }
+  background-color: #fff; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -23,9 +23,9 @@ h1, h2, h3, h4 {
     transform: rotate(360deg); } }
 
 div#wrapper {
-  background-color: #fff;
+  margin: 0 auto;
   max-width: 60%;
-  padding: 75px; }
+  padding: 20px 75px; }
 
 a {
   color: #db7b7b; }
@@ -42,7 +42,7 @@ a {
 .center, .service-img, .user-img {
   text-align: center; }
 
-.margin-center, div#wrapper {
+.margin-center {
   margin: 0 auto; }
 
 .service-img, .user-img {
