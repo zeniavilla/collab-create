@@ -22,9 +22,9 @@ div.profile-header {
 
 .row {
   margin-bottom: 3%; }
-  .rowh1 {
+  .row h1 {
     font-family: "Kaushan Script", sans-serif;
     font-size: 3em;
     margin-bottom: 0; }
-  .rowh2 {
+  .row h2 {
     margin-top: 0; }
