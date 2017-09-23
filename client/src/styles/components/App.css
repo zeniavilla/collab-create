@@ -23,7 +23,6 @@ h1, h2, h3, h4 {
 
 div#wrapper {
   background-color: #fff;
-  margin: 0 auto;
   max-width: 60%;
   padding: 75px; }
 
@@ -42,5 +41,5 @@ a {
 .center {
   text-align: center; }
 
-.margin-center {
+.margin-center, div#wrapper {
   margin: 0 auto; }

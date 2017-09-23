@@ -26,19 +26,21 @@ h1, h2, h3, h4 {
 }
 
 div#wrapper {
+  @extend .margin-center;
   background-color: #fff;
-  margin: 0 auto;
   max-width: 60%;
   padding: 75px;
 }
 
 a {
   color: $primary-pink;
+
   &:hover {
     color: $primary-pink;
     opacity: .6;
     text-decoration: none;
-  };
+  }
+
   &:focus, &:visited {
     color: $primary-pink;
   }
