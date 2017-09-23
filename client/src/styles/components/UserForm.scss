@@ -2,11 +2,13 @@
 @import './App.scss';
 
 form {
-  @extend .center;
+  margin: 0 auto;
+  width: 50%;
 }
 
 input {
   padding-left: 22px;
+  width: 100%;
 }
 
 .form-field input:not([type="checkbox"]) {
@@ -15,12 +17,10 @@ input {
   border-radius: 5px;
   height: 50px;
   margin-bottom: 3%;
-  width: 50%;
 }
 
 .form-field-check {
   @extend .margin-center;
-  width: 50%;
 }
 
 .form-field-check input[type=checkbox] {
@@ -46,6 +46,10 @@ input {
   margin-top: 3%;
 }
 
+.form-error {
+  color: #d41010;
+}
+
 button.btn-form {
   -webkit-transition: background-color 2s;
   background-color: $primary-pink;
@@ -58,4 +62,9 @@ button.btn-form {
     background-color: $secondary-pink;
     transition: background-color 1s ease-in-out;
   }
+}
+
+.user-form label {
+  font: 300 1.8em/100% $title-font;
+  text-align: left;
 }

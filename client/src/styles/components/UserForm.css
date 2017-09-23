@@ -5,7 +5,7 @@ html {
   position: relative; }
 
 html, #root {
-  background-color: #fafafa; }
+  background-color: #fff; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -23,9 +23,9 @@ h1, h2, h3, h4 {
     transform: rotate(360deg); } }
 
 div#wrapper {
-  background-color: #fff;
+  margin: 0 auto;
   max-width: 60%;
-  padding: 75px; }
+  padding: 20px 75px; }
 
 a {
   color: #db7b7b; }
@@ -39,25 +39,26 @@ a {
 .quote-text {
   font-style: italic; }
 
-.center, form {
+.center {
   text-align: center; }
 
-.margin-center, div#wrapper, .form-field-check {
+.margin-center, .form-field-check {
   margin: 0 auto; }
 
+form {
+  margin: 0 auto;
+  width: 50%; }
+
 input {
-  padding-left: 22px; }
+  padding-left: 22px;
+  width: 100%; }
 
 .form-field input:not([type="checkbox"]) {
   background-color: #e8e8e8;
   border: none;
   border-radius: 5px;
   height: 50px;
-  margin-bottom: 3%;
-  width: 50%; }
-
-.form-field-check {
-  width: 50%; }
+  margin-bottom: 3%; }
 
 .form-field-check input[type=checkbox] {
   -webkit-appearance: none;
@@ -78,6 +79,9 @@ input {
 .form-action {
   margin-top: 3%; }
 
+.form-error {
+  color: #d41010; }
+
 button.btn-form {
   -webkit-transition: background-color 2s;
   background-color: #db7b7b;
@@ -88,3 +92,7 @@ button.btn-form {
   button.btn-form:hover {
     background-color: #f69d9d;
     transition: background-color 1s ease-in-out; }
+
+.user-form label {
+  font: 300 1.8em/100% "Lato", sans-serif;
+  text-align: left; }
