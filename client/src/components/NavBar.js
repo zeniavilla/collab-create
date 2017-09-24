@@ -27,7 +27,7 @@ const NavBar = props => {
   )
 
   return (
-    <Navbar collapseOnSelect>
+    <Navbar className="header-nav" collapseOnSelect>
       <Navbar.Header>
         <Navbar.Brand>
           <Link to="/">collab|create</Link>
