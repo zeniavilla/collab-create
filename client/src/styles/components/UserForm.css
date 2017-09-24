@@ -101,6 +101,11 @@ button.btn-form {
     background-color: #f69d9d;
     transition: background-color 1s ease-in-out; }
 
+.user-form h2 {
+  color: #4c4c4c;
+  margin-bottom: 6%;
+  margin-top: 0; }
+
 .user-form label {
   font: 300 1.2em/100% "Lato", sans-serif;
   margin-bottom: 3%; }

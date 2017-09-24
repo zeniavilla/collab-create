@@ -76,7 +76,15 @@ button.btn-form {
   }
 }
 
-.user-form label {
-  font: 300 1.2em/100% $title-font;
-  margin-bottom: 3%;
+.user-form {
+  h2 {
+    color: $dark-gray;
+    margin-bottom: 6%;
+    margin-top: 0;
+  }
+
+  label {
+    font: 300 1.2em/100% $title-font;
+    margin-bottom: 3%;
+  }
 }
