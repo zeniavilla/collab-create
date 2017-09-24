@@ -5,21 +5,23 @@ const SignInForm = props => {
   const { email, password } = props.userFormData;
 
   return(
-    <form onSubmit={handleOnSubmit}>
+    <form className="user-form" onSubmit={handleOnSubmit}>
       <div className="form-error">
         {props.currentUser.error}
       </div>
       
+      <label htmlFor="email">Email</label>
       <div className="form-field">
-        <input type="email" id="email" placeholder="Email" onChange={handleOnChange} value={email || ''} />
+        <input type="email" id="email" onChange={handleOnChange} value={email || ''} />
       </div>
 
+      <label htmlFor="password">Password</label>
       <div className="form-field">
-        <input type="password" id="password" placeholder="Password" onChange={handleOnChange} value={password || ''} />
+        <input type="password" id="password" onChange={handleOnChange} value={password || ''} />
       </div>
 
       <div className="form-action">
-        <button className="btn-primary">Sign In</button>
+        <button className="btn-form">Sign In</button>
       </div>
     </form>
   )
