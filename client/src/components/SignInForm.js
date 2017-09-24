@@ -6,6 +6,7 @@ const SignInForm = props => {
 
   return(
     <form className="user-form" onSubmit={handleOnSubmit}>
+      <h2>Sign in</h2>
       <div className="form-error">
         {props.currentUser.error}
       </div>
