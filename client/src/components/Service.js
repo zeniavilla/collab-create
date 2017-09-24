@@ -6,7 +6,7 @@ const Service = props => {
   const renderUsers = props.service.users.map(user => <UserCard user={user} key={user.id} />);
 
   return (
-    <div>
+    <div className="service-users">
       <h2>{props.service.name}</h2>
       <div>{renderUsers}</div>
     </div>
