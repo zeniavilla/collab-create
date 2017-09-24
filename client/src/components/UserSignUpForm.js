@@ -11,9 +11,10 @@ const UserSignUpForm = props => {
   return (
     <div>
       <form className="user-form" onSubmit={handleOnSubmit}>
+      <h2>Create account</h2>
         <label htmlFor="name">Full name</label>
         <div className="form-field">
-          <input type="text" id="name" placeholder="Full name" onChange={handleOnChange} value={name || ''} />
+          <input type="text" id="name" onChange={handleOnChange} value={name || ''} />
         </div>
         <div className="form-error">
           {
@@ -25,7 +26,7 @@ const UserSignUpForm = props => {
         
         <label htmlFor="email">Email</label>
         <div className="form-field">
-          <input type="email" id="email" placeholder="Email" onChange={handleOnChange} value={email || ''} />
+          <input type="email" id="email" onChange={handleOnChange} value={email || ''} />
         </div>
         <div className="form-error">
           {
@@ -37,7 +38,7 @@ const UserSignUpForm = props => {
         
         <label htmlFor="password">Password</label>
         <div className="form-field">
-          <input type="password" id="password" placeholder="Password" onChange={handleOnChange} value={password || ''} />
+          <input type="password" id="password" onChange={handleOnChange} value={password || ''} />
         </div>
         <div className="form-error">
           {
@@ -49,12 +50,12 @@ const UserSignUpForm = props => {
 
         <label htmlFor="password_confirmation">Confirm password</label>
         <div className="form-field">
-          <input type="password" id="password_confirmation" placeholder="Confirm password" onChange={handleOnChange} value={password_confirmation || ''} />
+          <input type="password" id="password_confirmation" onChange={handleOnChange} value={password_confirmation || ''} />
         </div>
 
-        <label htmlFor="bio">Introduce yourself to fellow creatives</label>
+        <label htmlFor="bio">Introduce yourself</label>
         <div className="form-field">
-          <input type="text" id="bio" placeholder="Write a little about yourself." onChange={handleOnChange} value={bio || ''} />
+          <input type="textarea" id="bio" onChange={handleOnChange} value={bio || ''} />
         </div>
         <div className="form-error">
           {
@@ -64,9 +65,9 @@ const UserSignUpForm = props => {
           }
         </div>
 
-        <label htmlFor="bio_img">Bio image</label>
+        <label htmlFor="bio_img">Profile image URL</label>
         <div className="form-field">
-          <input type="text" id="bio_img" placeholder="Bio image" onChange={handleOnChange} value={bio_img || ''} />
+          <input type="text" id="bio_img" onChange={handleOnChange} value={bio_img || ''} />
         </div>
         <div className="form-error">
           {
@@ -78,7 +79,7 @@ const UserSignUpForm = props => {
 
         <label htmlFor="location">Location</label>
         <div className="form-field">
-          <input type="text" id="location" placeholder="Location" onChange={handleOnChange} value={location || ''} />
+          <input type="text" id="location" onChange={handleOnChange} value={location || ''} />
         </div>
         <div className="form-error">
           {
@@ -90,7 +91,7 @@ const UserSignUpForm = props => {
 
         <label htmlFor="phone_number">Phone number</label>
         <div className="form-field">
-          <input type="text" id="phone_number" placeholder="Phone number" onChange={handleOnChange} value={phone_number || ''} />
+          <input type="text" id="phone_number" onChange={handleOnChange} value={phone_number || ''} />
         </div>
         <div className="form-error">
           {
@@ -102,7 +103,7 @@ const UserSignUpForm = props => {
 
         <label htmlFor="website">Website</label>
         <div className="form-field">
-          <input type="text" id="website" placeholder="Website" onChange={handleOnChange} value={website || ''} />
+          <input type="text" id="website" onChange={handleOnChange} value={website || ''} />
         </div>
         <div className="form-error">
           {
@@ -114,7 +115,7 @@ const UserSignUpForm = props => {
 
         <label htmlFor="instagram">Instagram username</label>
         <div className="form-field">
-          <input type="text" id="instagram" placeholder="Instagram" onChange={handleOnChange} value={instagram || ''} />
+          <input type="text" id="instagram" onChange={handleOnChange} value={instagram || ''} />
         </div>
         <div className="form-error">
           {
@@ -124,7 +125,7 @@ const UserSignUpForm = props => {
           }
         </div>
 
-        <label>What services do you provide?</label>
+        <label>Select services</label>
         <div className="form-field-check">
           {
             services.map(service => 
