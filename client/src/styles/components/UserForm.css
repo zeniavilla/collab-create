@@ -47,18 +47,23 @@ a {
 
 form {
   margin: 0 auto;
-  width: 50%; }
+  width: 55%; }
 
-input {
+.form-field {
+  margin-bottom: 2%; }
+
+.form-field input {
   padding-left: 22px;
   width: 100%; }
-
-.form-field input:not([type="checkbox"]) {
-  background-color: #e8e8e8;
-  border: none;
-  border-radius: 5px;
-  height: 50px;
-  margin-bottom: 3%; }
+  .form-field input:not([type="checkbox"]) {
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 3%; }
+  .form-field input[type=textarea] {
+    padding-bottom: 130px;
+    padding-top: 30px; }
 
 .form-field-check input[type=checkbox] {
   -webkit-appearance: none;
@@ -87,12 +92,15 @@ button.btn-form {
   background-color: #db7b7b;
   border: 1px solid #f69d9d;
   border-radius: 5px;
+  color: #fafafa;
+  display: block;
   height: 45px;
-  width: 20%; }
+  margin: 0 auto;
+  width: 60%; }
   button.btn-form:hover {
     background-color: #f69d9d;
     transition: background-color 1s ease-in-out; }
 
 .user-form label {
-  font: 300 1.8em/100% "Lato", sans-serif;
-  text-align: left; }
+  font: 300 1.2em/100% "Lato", sans-serif;
+  margin-bottom: 3%; }
