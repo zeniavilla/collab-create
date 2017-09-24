@@ -28,8 +28,31 @@ form {
   }
 }
 
+::-webkit-input-placeholder {
+  color: red;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: red;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: red;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: red;
+}
+
 .form-field-check {
   @extend .margin-center;
+  
+  input[type=checkbox] {
+    float: right;
+  }
+
+  .col-sm-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .form-field-check input[type=checkbox] {
@@ -52,26 +75,22 @@ form {
 }
 
 .form-action {
-  margin-top: 3%;
-}
-
-.form-error {
-  color: #d41010;
+  margin-top: 4%;
 }
 
 button.btn-form {
   -webkit-transition: background-color 2s;
-  background-color: $primary-pink;
-  border: 1px solid $secondary-pink;
+  background-color: $primary-red;
+  border: 1px solid $secondary-red;
   border-radius: 5px;
   color: #fafafa;
   display: block;
   height: 45px;
   margin: 0 auto;
-  width: 60%;
+  width: 45%;
   
   &:hover {
-    background-color: $secondary-pink;
+    background-color: $secondary-red;
     transition: background-color 1s ease-in-out;
   }
 }

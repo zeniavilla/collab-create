@@ -65,6 +65,16 @@ form {
     padding-bottom: 130px;
     padding-top: 30px; }
 
+::-webkit-input-placeholder {
+  color: red; }
+
+.form-field-check input[type=checkbox] {
+  float: right; }
+
+.form-field-check .col-sm-4 {
+  padding-left: 0;
+  padding-right: 0; }
+
 .form-field-check input[type=checkbox] {
   -webkit-appearance: none;
   background-color: white;
@@ -82,7 +92,7 @@ form {
     border: none; }
 
 .form-action {
-  margin-top: 3%; }
+  margin-top: 4%; }
 
 .form-error {
   color: #d41010; }
@@ -96,7 +106,7 @@ button.btn-form {
   display: block;
   height: 45px;
   margin: 0 auto;
-  width: 60%; }
+  width: 45%; }
   button.btn-form:hover {
     background-color: #f69d9d;
     transition: background-color 1s ease-in-out; }

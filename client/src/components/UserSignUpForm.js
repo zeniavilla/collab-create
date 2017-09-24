@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../styles/components/UserForm.css';
+import { Col } from 'react-bootstrap';
 
 const UserSignUpForm = props => {
   
@@ -14,38 +15,17 @@ const UserSignUpForm = props => {
       <h2>Create account</h2>
         <label htmlFor="name">Full name</label>
         <div className="form-field">
-          <input type="text" id="name" onChange={handleOnChange} value={name || ''} />
-        </div>
-        <div className="form-error">
-          {
-            (errors) 
-            ? `${errors.name}` 
-            : null
-          }
+          <input type="text" id="name" placeholder={(errors) ? errors.name : null} onChange={handleOnChange} value={name || ''} />
         </div>
         
         <label htmlFor="email">Email</label>
         <div className="form-field">
-          <input type="email" id="email" onChange={handleOnChange} value={email || ''} />
-        </div>
-        <div className="form-error">
-          {
-            (errors) 
-            ? `${errors.email}` 
-            : null
-          }
+          <input type="email" id="email" placeholder={(errors) ? errors.email : null} onChange={handleOnChange} value={email || ''} />
         </div>
         
         <label htmlFor="password">Password</label>
         <div className="form-field">
-          <input type="password" id="password" onChange={handleOnChange} value={password || ''} />
-        </div>
-        <div className="form-error">
-          {
-            (errors) 
-            ? `${errors.password}` 
-            : null
-          }
+          <input type="password" id="password" placeholder={(errors) ? errors.password : null} onChange={handleOnChange} value={password || ''} />
         </div>
 
         <label htmlFor="password_confirmation">Confirm password</label>
@@ -55,84 +35,44 @@ const UserSignUpForm = props => {
 
         <label htmlFor="bio">Introduce yourself</label>
         <div className="form-field">
-          <input type="textarea" id="bio" onChange={handleOnChange} value={bio || ''} />
-        </div>
-        <div className="form-error">
-          {
-            (errors) 
-            ? `${errors.bio}` 
-            : null
-          }
+          <input type="textarea" id="bio" placeholder={(errors) ? errors.bio : null} onChange={handleOnChange} value={bio || ''} />
         </div>
 
         <label htmlFor="bio_img">Profile image URL</label>
         <div className="form-field">
-          <input type="text" id="bio_img" onChange={handleOnChange} value={bio_img || ''} />
-        </div>
-        <div className="form-error">
-          {
-            (errors) 
-            ? `${errors.bio_img}` 
-            : null
-          }
+          <input type="text" id="bio_img" placeholder={(errors) ? errors.bio_img : null} onChange={handleOnChange} value={bio_img || ''} />
         </div>
 
         <label htmlFor="location">Location</label>
         <div className="form-field">
-          <input type="text" id="location" onChange={handleOnChange} value={location || ''} />
-        </div>
-        <div className="form-error">
-          {
-            (errors) 
-            ? `${errors.location}` 
-            : null
-          }
+          <input type="text" id="location" placeholder={(errors) ? errors.location : null} onChange={handleOnChange} value={location || ''} />
         </div>
 
         <label htmlFor="phone_number">Phone number</label>
         <div className="form-field">
-          <input type="text" id="phone_number" onChange={handleOnChange} value={phone_number || ''} />
-        </div>
-        <div className="form-error">
-          {
-            (errors) 
-            ? `${errors.phone_number}` 
-            : null
-          }
+          <input type="text" id="phone_number" placeholder={(errors) ? errors.phone_number : null} onChange={handleOnChange} value={phone_number || ''} />
         </div>
 
         <label htmlFor="website">Website</label>
         <div className="form-field">
-          <input type="text" id="website" onChange={handleOnChange} value={website || ''} />
-        </div>
-        <div className="form-error">
-          {
-            (errors) 
-            ? `${errors.website}` 
-            : null
-          }
+          <input type="text" id="website" placeholder={(errors) ? errors.website : null} onChange={handleOnChange} value={website || ''} />
         </div>
 
         <label htmlFor="instagram">Instagram username</label>
         <div className="form-field">
-          <input type="text" id="instagram" onChange={handleOnChange} value={instagram || ''} />
-        </div>
-        <div className="form-error">
-          {
-            (errors) 
-            ? `${errors.instagram}` 
-            : null
-          }
+          <input type="text" id="instagram" placeholder={(errors) ? errors.instagram : null} onChange={handleOnChange} value={instagram || ''} />
         </div>
 
         <label>Select services</label>
-        <div className="form-field-check">
+        <div className="form-field-check clearfix">
           {
             services.map(service => 
-              <span className="form-checkboxes">
-                {service.name} 
-                <input type="checkbox" name={service.name} value={service.id} onChange={handleOnChange} />
-              </span>
+              <Col sm={4}>
+                <span className="form-checkboxes">
+                  {service.name} 
+                  <input type="checkbox" name={service.name} value={service.id} onChange={handleOnChange} />
+                </span>
+              </Col>
             )
           }
           
