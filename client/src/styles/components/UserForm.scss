@@ -80,8 +80,8 @@ form {
 
 button.btn-form {
   -webkit-transition: background-color 2s;
-  background-color: $primary-red;
-  border: 1px solid $secondary-red;
+  background-color: $primary-pink;
+  border: 1px solid $secondary-pink;
   border-radius: 5px;
   color: #fafafa;
   display: block;
@@ -90,7 +90,7 @@ button.btn-form {
   width: 45%;
   
   &:hover {
-    background-color: $secondary-red;
+    background-color: $secondary-pink;
     transition: background-color 1s ease-in-out;
   }
 }

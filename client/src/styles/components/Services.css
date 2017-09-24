@@ -24,6 +24,7 @@ h1, h2, h3, h4 {
 
 div#wrapper {
   margin: 0 auto;
+  margin-bottom: 55px;
   max-width: 60%;
   padding: 20px 75px; }
 
