@@ -1,5 +1,6 @@
 @import '../shared.scss';
 
 .navbar-default {
-  border-color: $primary-green;
+  background-color: #fff;
+  border-bottom: 2px solid $primary-green;
 }
