@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import SignInForm from '../components/SignInForm';
+// actions
+import { updateUserFormData, createSession } from '../../actions/userActions';
 
-import { updateUserFormData, createSession } from '../actions/userActions';
+// components
+import SignInForm from './SignInForm';
 
 class SignIn extends Component {
 

@@ -9,7 +9,7 @@ import ServicesNav from './ServicesNav/ServicesNav';
 import Footer from './Footer/Footer';
 import UserNew from './SignUpForm/UserNew';
 import UserProfileEdit from '../containers/UserProfileEdit';
-import SignIn from '../containers/SignIn';
+import SignIn from './SignInForm/SignIn';
 import SignOut from '../containers/SignOut';
 import UserShow from './UserPublicProfile/UserShow';
 
