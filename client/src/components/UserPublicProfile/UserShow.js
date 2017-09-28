@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { getSelectedUserService } from '../actions/userActions';
+import { getSelectedUserService } from '../../actions/userActions';
 
-import UserPublicProfile from '../components/UserPublicProfile';
-import '../styles/components/UserShow.css';
+import UserPublicProfile from './UserPublicProfile';
+import '../../styles/components/UserShow.css';
 
 class UserShow extends Component {
   

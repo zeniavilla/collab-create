@@ -11,7 +11,7 @@ import UserNew from '../containers/UserNew';
 import UserProfileEdit from '../containers/UserProfileEdit';
 import SignIn from '../containers/SignIn';
 import SignOut from '../containers/SignOut';
-import UserShow from '../containers/UserShow';
+import UserShow from './UserPublicProfile/UserShow';
 
 class App extends Component {
   render() {

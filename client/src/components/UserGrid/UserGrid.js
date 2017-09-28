@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Col } from 'react-bootstrap';
 
-const UserCard = props => {
+const UserGrid = props => {
   const { name, id, bio_img } = props.user;
   const userBackground = {
     backgroundImage: `url(${bio_img})`
@@ -24,4 +24,4 @@ const UserCard = props => {
   )
 }
 
-export default UserCard;
+export default UserGrid;

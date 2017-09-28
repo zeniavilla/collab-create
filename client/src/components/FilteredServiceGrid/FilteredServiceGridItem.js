@@ -1,9 +1,9 @@
 import React from 'react';
 
-import UserCard from '../UserCard';
+import UserGrid from '../UserGrid/UserGrid';
 
 const Service = props => {
-  const renderUsers = props.service.users.map(user => <UserCard user={user} key={user.id} />);
+  const renderUsers = props.service.users.map(user => <UserGrid user={user} key={user.id} />);
 
   return (
     <div className="service-users">
