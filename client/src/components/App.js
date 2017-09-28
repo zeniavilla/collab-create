@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+// styles
 import '../styles/components/App.css';
+
+// components
 import ServiceGrid from './ServiceGrid/ServiceGrid';
 import NavCurrentUser from './Navbar/NavCurrentUser';
 import ServicesNav from './ServicesNav/ServicesNav';
