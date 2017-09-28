@@ -1,6 +1,9 @@
 import React from 'react';
 
-import '../styles/components/Footer.css';
+// styles
+import '../../styles/components/Footer.css';
+
+// components
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 

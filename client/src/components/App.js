@@ -6,7 +6,7 @@ import '../styles/components/App.css';
 import ServiceGrid from './ServiceGrid/ServiceGrid';
 import NavCurrentUser from '../containers/NavCurrentUser';
 import ServicesNav from './ServicesNav/ServicesNav';
-import Footer from './Footer';
+import Footer from './Footer/Footer';
 import UserNew from '../containers/UserNew';
 import UserProfileEdit from '../containers/UserProfileEdit';
 import SignIn from '../containers/SignIn';
