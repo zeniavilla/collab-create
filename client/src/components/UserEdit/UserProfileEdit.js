@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import UserEditForm from '../components/UserEditForm';
+// actions
+import { updateUserFormData, editUser } from '../../actions/userActions';
+import { getServices } from '../../actions/serviceActions';
 
-import { updateUserFormData, editUser } from '../actions/userActions';
-import { getServices } from '../actions/serviceActions';
+// components
+import UserEditForm from './UserEditForm';
 
 class UserProfileEdit extends Component {
 

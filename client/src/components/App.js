@@ -8,7 +8,7 @@ import NavCurrentUser from './Navbar/NavCurrentUser';
 import ServicesNav from './ServicesNav/ServicesNav';
 import Footer from './Footer/Footer';
 import UserNew from './SignUpForm/UserNew';
-import UserProfileEdit from '../containers/UserProfileEdit';
+import UserProfileEdit from './UserEdit/UserProfileEdit';
 import SignIn from './SignInForm/SignIn';
 import SignOut from './SignOut/SignOut';
 import UserShow from './UserPublicProfile/UserShow';
