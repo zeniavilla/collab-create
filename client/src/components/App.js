@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import '../styles/components/App.css';
 import ServiceGrid from './ServiceGrid/ServiceGrid';
-import NavCurrentUser from '../containers/NavCurrentUser';
+import NavCurrentUser from './Navbar/NavCurrentUser';
 import ServicesNav from './ServicesNav/ServicesNav';
 import Footer from './Footer/Footer';
 import UserNew from '../containers/UserNew';

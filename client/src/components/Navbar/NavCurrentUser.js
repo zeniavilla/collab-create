@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import '../styles/components/Nav.css';
-import NavBar from '../components/NavBar';
+// styles
+import '../../styles/components/Nav.css';
+
+// components
+import NavBar from './NavBar';
 
 class NavCurrentUser extends Component {
   render() {
