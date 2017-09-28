@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Service from '../components/Service';
+import FilteredServiceGridItem from './FilteredServiceGridItem';
 
-class FilteredServices extends Component {
+class FilteredServiceGrid extends Component {
 
   render() {
     const renderServices = this.props.services.map(service =>
-      <Service service={service} key={service.id} />)
+      <FilteredServiceGridItem service={service} key={service.id} />)
       return(
         <div className="clearfix">
         {renderServices}
@@ -25,4 +25,4 @@ const mapStateToProps = (state, ownProps) => {
   return ({ services: state.services.filter(service => service.name === serviceName) })
 }
 
-export default connect(mapStateToProps)(FilteredServices);
+export default connect(mapStateToProps)(FilteredServiceGrid);

@@ -10,7 +10,7 @@ import '../../styles/components/Services.css';
 
 // components
 import ServiceGridItem from './ServiceGridItem';
-import FilteredServices from '../../containers/FilteredServices';
+import FilteredServiceGrid from '../FilteredServiceGrid/FilteredServiceGrid';
 
 
 class ServiceGrid extends Component {
@@ -25,7 +25,7 @@ class ServiceGrid extends Component {
       
     return(
       <Switch>
-        <Route path='/services/:serviceName' component={FilteredServices} />
+        <Route path='/services/:serviceName' component={FilteredServiceGrid} />
         <div className="clearfix">
           {renderServices}
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UserCard from './UserCard';
+import UserCard from '../UserCard';
 
 const Service = props => {
   const renderUsers = props.service.users.map(user => <UserCard user={user} key={user.id} />);
