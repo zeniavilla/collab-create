@@ -7,7 +7,7 @@ import ServiceGrid from './ServiceGrid/ServiceGrid';
 import NavCurrentUser from './Navbar/NavCurrentUser';
 import ServicesNav from './ServicesNav/ServicesNav';
 import Footer from './Footer/Footer';
-import UserNew from '../containers/UserNew';
+import UserNew from './SignUpForm/UserNew';
 import UserProfileEdit from '../containers/UserProfileEdit';
 import SignIn from '../containers/SignIn';
 import SignOut from '../containers/SignOut';
