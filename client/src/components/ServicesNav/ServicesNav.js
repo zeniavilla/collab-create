@@ -21,8 +21,7 @@ const ServicesNav = props => {
   const renderLinks = props.services.sort(compare).map(service =>
     <LinkContainer
     key={service.id}
-    to={`/services/${service.name.toLowerCase().split(' ').join('-')}`} 
-    component={FilteredServiceGrid}>
+    to={`/services/${service.name.toLowerCase().split(' ').join('-')}`}>
       <NavItem eventKey={service.id}>{service.name}</NavItem>
     </LinkContainer>
   )
