@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import '../styles/components/App.css';
 import ServiceCategories from '../containers/ServiceCategories';
 import NavCurrentUser from '../containers/NavCurrentUser';
+import ServicesNav from './ServicesNav';
 import Footer from './Footer';
 import UserNew from '../containers/UserNew';
 import UserProfileEdit from '../containers/UserProfileEdit';
@@ -17,6 +19,7 @@ class App extends Component {
       <Router>
         <div>
           <NavCurrentUser />
+          <ServicesNav services={this.props.services} />
           <div id="wrapper">
             <Route path="/services" component={ServiceCategories} />
             <Route path="/signup" component={UserNew} />
@@ -33,4 +36,8 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return({ services: state.services })
+}
+
+export default connect(mapStateToProps)(App);
