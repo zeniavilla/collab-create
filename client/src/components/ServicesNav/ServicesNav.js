@@ -1,13 +1,10 @@
 import React from 'react';
 
-import { Navbar, Link, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 // styles
 import '../../styles/components/ServicesNav.css';
-
-// components
-import FilteredServiceGrid from '../FilteredServiceGrid/FilteredServiceGrid';
 
 const ServicesNav = props => {
   const compare = (a,b) => {
