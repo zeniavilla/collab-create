@@ -10,7 +10,7 @@ import Footer from './Footer/Footer';
 import UserNew from './SignUpForm/UserNew';
 import UserProfileEdit from '../containers/UserProfileEdit';
 import SignIn from './SignInForm/SignIn';
-import SignOut from '../containers/SignOut';
+import SignOut from './SignOut/SignOut';
 import UserShow from './UserPublicProfile/UserShow';
 
 class App extends Component {

@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { removeCurrentUser } from '../actions/userActions';
+import { removeCurrentUser } from '../../actions/userActions';
 
 class SignOut extends Component {
   componentWillMount = () => {
