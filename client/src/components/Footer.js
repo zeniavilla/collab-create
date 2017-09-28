@@ -2,12 +2,15 @@ import React from 'react';
 
 import '../styles/components/Footer.css';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 const Footer = () =>
   <Navbar className="footer">
     <Navbar.Header>
       <Navbar.Text>
-        <a className="footer-brand" href="#" title="Developed by Zenia Villa">© Collab-Create</a>
+        <LinkContainer to="/">
+          <a className="footer-brand" title="Developed by Zenia Villa">© Collab-Create</a>
+        </LinkContainer>
       </Navbar.Text>
     </Navbar.Header>
 
