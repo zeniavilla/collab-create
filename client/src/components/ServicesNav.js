@@ -5,6 +5,8 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 import FilteredServices from '../containers/FilteredServices';
 
+import '../styles/components/ServicesNav.css';
+
 const ServicesNav = props => {
   const compare = (a,b) => {
     if (a.name < b.name)
