@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import '../styles/components/App.css';
-import ServiceCategories from '../containers/ServiceCategories';
+import ServiceGrid from './ServiceGrid/ServiceGrid';
 import NavCurrentUser from '../containers/NavCurrentUser';
 import ServicesNav from './ServicesNav';
 import Footer from './Footer';
@@ -21,7 +21,7 @@ class App extends Component {
           <NavCurrentUser />
           <ServicesNav services={this.props.services} />
           <div id="wrapper">
-            <Route path="/services" component={ServiceCategories} />
+            <Route path="/services" component={ServiceGrid} />
             <Route path="/signup" component={UserNew} />
             <Route path="/signin" component={SignIn} />
             <Route path="/signout" component={SignOut} />

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import { Col } from 'react-bootstrap';
 
-const ServiceCategory = props => {
+const ServiceGridItem = props => {
   const { name, img_url } = props.service;
   const slug = name.toLowerCase().split(' ').join('-');
   const serviceBackground = {
@@ -25,4 +24,4 @@ const ServiceCategory = props => {
   )
 }
 
-export default ServiceCategory;
+export default ServiceGridItem;
