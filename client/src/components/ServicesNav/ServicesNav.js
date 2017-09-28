@@ -3,9 +3,11 @@ import React from 'react';
 import { Navbar, Link, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
-import FilteredServices from '../containers/FilteredServices';
+// styles
+import '../../styles/components/ServicesNav.css';
 
-import '../styles/components/ServicesNav.css';
+// components
+import FilteredServiceGrid from '../FilteredServiceGrid/FilteredServiceGrid';
 
 const ServicesNav = props => {
   const compare = (a,b) => {
@@ -17,7 +19,7 @@ const ServicesNav = props => {
   }
 
   const renderLinks = props.services.sort(compare).map(service =>
-    <LinkContainer to={`/services/${service.name.toLowerCase().split(' ').join('-')}`} component={FilteredServices}>
+    <LinkContainer to={`/services/${service.name.toLowerCase().split(' ').join('-')}`} component={FilteredServiceGrid}>
       <NavItem eventKey={service.id}>{service.name}</NavItem>
     </LinkContainer>
   )
