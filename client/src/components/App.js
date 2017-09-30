@@ -22,8 +22,7 @@ class App extends Component {
       <Router>
         <div>
           <NavCurrentUser />
-          <ServicesNav services={this.props.services} />
-          <div id="wrapper">
+          <div>
             <Route path="/services" component={ServiceGrid} />
             <Route path="/signup" component={UserNew} />
             <Route path="/signin" component={SignIn} />
