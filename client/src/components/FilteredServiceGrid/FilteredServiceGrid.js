@@ -9,9 +9,9 @@ class FilteredServiceGrid extends Component {
     const renderServices = this.props.services.map(service =>
       <FilteredServiceGridItem service={service} key={service.id} />)
       return(
-        <div className="clearfix">
-        {renderServices}
-      </div>
+        <div id="wrapper" className="clearfix">
+          {renderServices}
+        </div>
     )
   }
 }

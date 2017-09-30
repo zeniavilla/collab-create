@@ -13,7 +13,7 @@ const UserSignUpForm = props => {
   const { errors } = props.currentUser;
 
   return (
-    <div>
+    <div id="wrapper">
       <form className="user-form" onSubmit={handleOnSubmit}>
       <h2>Create account</h2>
         <label htmlFor="name">Full name</label>
