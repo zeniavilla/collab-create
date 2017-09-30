@@ -5,3 +5,9 @@
   border-bottom: 2px solid $primary-green;
   margin: 0;
 }
+
+.navbar-nav>.active>a {
+  &:focus, &:active {
+    background: none;
+  }
+}
