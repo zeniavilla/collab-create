@@ -11,7 +11,7 @@ import '../../styles/components/Services.css';
 // components
 import ServiceGridItem from './ServiceGridItem';
 import FilteredServiceGrid from '../FilteredServiceGrid/FilteredServiceGrid';
-
+import ServicesNav from '../ServicesNav/ServicesNav';
 
 class ServiceGrid extends Component {
 
@@ -24,12 +24,17 @@ class ServiceGrid extends Component {
       <ServiceGridItem service={service} key={service.id} />)
       
     return(
-      <Switch>
-        <Route path='/services/:serviceName' component={FilteredServiceGrid} />
-        <div className="clearfix">
-          {renderServices}
-        </div>
-      </Switch>
+      <div>
+        <Switch>
+          <ServicesNav services={this.props.services} />
+        </Switch>
+        <Switch>
+          <Route path='/services/:serviceName' component={FilteredServiceGrid} />
+          <div id="wrapper" className="clearfix">
+            {renderServices}
+          </div>
+        </Switch>
+      </div>
     )
   }
 }
