@@ -19,6 +19,7 @@ class UserShow extends Component {
   render() {
     return (
       <div>
+      <ServicesNav services={this.props.services} />
       <div id="wrapper" className="clearfix">
         <UserPublicProfile user={this.props.selectedUserService} services={this.props.services} />
       </div>
