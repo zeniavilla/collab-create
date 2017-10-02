@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 // actions
-import { updateUserFormData, editUser } from '../../actions/userActions';
+import { updateUserFormData, editUser, deleteUser } from '../../actions/userActions';
 import { getServices } from '../../actions/serviceActions';
+
+// styles
+import '../../styles/components/UserEdit.css';
 
 // components
 import UserEditForm from './UserEditForm';
@@ -39,9 +42,13 @@ class UserProfileEdit extends Component {
     this.props.editUser(this.props.userFormData, this.props.currentUser.id);
   }
 
+  handleDeleteClick = event => {
+    this.props.deleteUser(this.props.currentUser.id)
+  }
+
   render() {
     return (
-      <UserEditForm userFormData={this.props.userFormData} currentUser={this.props.currentUser} handleOnChange={this.handleOnChange} handleOnSubmit={this.handleOnSubmit} services={this.props.services} />
+      <UserEditForm userFormData={this.props.userFormData} currentUser={this.props.currentUser} handleOnChange={this.handleOnChange} handleOnSubmit={this.handleOnSubmit} handleDeleteClick={this.handleDeleteClick} services={this.props.services} />
     )
   }
 }
@@ -54,4 +61,4 @@ const mapStateToProps = state => {
   })
 }
 
-export default connect(mapStateToProps, { updateUserFormData, editUser, getServices })(UserProfileEdit);
+export default connect(mapStateToProps, { updateUserFormData, editUser, getServices, deleteUser })(UserProfileEdit);
