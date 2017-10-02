@@ -1,13 +1,19 @@
 class Api::UsersController < ApplicationController
+  before_action :set_user, only: [:show, :update, :destroy]
+
   def show
-    user = User.find_by(id: params[:id])
-    render json: user
+    render json: @user
   end
 
   def update
-    user = User.find_by(id: params[:id])
-    user.update_attributes(user_params)
+    @user.update_attributes(user_params)
     render json: user
+  end
+
+  private
+
+  def set_user
+    @user = User.find_by(id: params[:id])
   end
 
   def user_params
