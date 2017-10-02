@@ -85,7 +85,7 @@ const UserSignUpForm = props => {
           <button className="btn-form">Sign Up</button>
         </div>
       </form>
-      <button name="facebook" onClick={handleOnClick} className="btn-insta">Continue with Facebook</button>
+      {/* <button name="facebook" onClick={handleOnClick} className="btn-insta">Continue with Facebook</button> */}
     </div>
   )
 }
