@@ -90,6 +90,19 @@ export const editUser = (user, userId) => {
   }
 }
 
+export const deleteUser = userId => {
+  return dispatch => {
+    return fetch(`${API_URL}/users/${userId}`, {
+      method: 'DELETE'
+    }).then(response => {
+      response.json()
+      dispatch(clearSession())
+      dispatch(resetUserForm())
+    })
+    .catch(error => console.log(error))
+  }
+}
+
 export const createSession = user => {
   return dispatch => {
     return fetch(`${API_URL}/users/sign_in.json`, {
