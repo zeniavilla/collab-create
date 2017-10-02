@@ -87,11 +87,15 @@ button.btn-form {
   display: block;
   height: 45px;
   margin: 0 auto;
-  width: 45%;
+  width: 290px;
   
   &:hover {
     background-color: $secondary-pink;
     transition: background-color 1s ease-in-out;
+  }
+
+  &:focus, &:active {
+    border-color: $secondary-pink;
   }
 }
 

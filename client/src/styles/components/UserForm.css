@@ -126,10 +126,12 @@ button.btn-form {
   display: block;
   height: 45px;
   margin: 0 auto;
-  width: 45%; }
+  width: 290px; }
   button.btn-form:hover {
     background-color: #f69d9d;
     transition: background-color 1s ease-in-out; }
+  button.btn-form:focus, button.btn-form:active {
+    border-color: #f69d9d; }
 
 .user-form h2 {
   color: #4c4c4c;
