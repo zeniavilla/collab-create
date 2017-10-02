@@ -10,6 +10,11 @@ class Api::UsersController < ApplicationController
     render json: user
   end
 
+  def destroy
+    @user.destroy
+    render status: 204
+  end
+
   private
 
   def set_user
