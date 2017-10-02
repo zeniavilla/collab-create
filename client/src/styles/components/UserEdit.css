@@ -66,16 +66,19 @@ form {
 
 .form-field input {
   padding-left: 22px;
+  padding-right: 22px;
   width: 100%; }
-  .form-field input:not([type="checkbox"]) {
+  .form-field input:not([type="checkbox"]), .form-field textarea {
     background-color: #e8e8e8;
     border: none;
     border-radius: 5px;
     height: 50px;
     margin-bottom: 3%; }
-  .form-field input[type=textarea] {
-    padding-bottom: 130px;
-    padding-top: 30px; }
+
+.form-field textarea {
+  overflow: hidden;
+  padding: 30px 22px 130px 22px;
+  width: 100%; }
 
 ::-webkit-input-placeholder {
   color: red; }
@@ -144,22 +147,30 @@ button.btn-form {
   margin-bottom: 3%; }
 
 ::-webkit-input-placeholder {
-  color: #4c4c4c; }
+  color: #4c4c4c;
+  position: relative;
+  white-space: pre-line; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #4c4c4c; }
+  color: #4c4c4c;
+  position: relative;
+  white-space: pre-line; }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #4c4c4c; }
+  color: #4c4c4c;
+  position: relative;
+  white-space: pre-line; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #4c4c4c; }
+  color: #4c4c4c;
+  position: relative;
+  white-space: pre-line; }
 
 button.delete {
-  background-color: #e02323;
+  background-color: #d22626;
   margin-top: 15px; }
   button.delete:hover {
     opacity: .7; }
