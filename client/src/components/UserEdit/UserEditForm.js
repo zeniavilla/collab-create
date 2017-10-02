@@ -5,7 +5,7 @@ import { Col } from 'react-bootstrap';
 
 const UserEditForm = props => {
   const { handleOnChange, handleOnSubmit, currentUser, services, handleDeleteClick } = props;
-  const { name, email, password, password_confirmation, bio, bio_img, location, phone_number, website, instagram } = props.userFormData;
+  const { name, email, password, password_confirmation, bio, bio_img, location, phone_number, website, instagram, quote } = props.userFormData;
 
   return (
     <div id="wrapper">
@@ -59,6 +59,11 @@ const UserEditForm = props => {
           <label htmlFor="instagram">Instagram username</label>
           <div className="form-field">
             <input type="text" id="instagram" placeholder={currentUser.instagram} onChange={handleOnChange} value={instagram} />
+          </div>
+
+          <label htmlFor="quote">Quote</label>
+          <div className="form-field">
+            <input type="text" id="quote" placeholder={currentUser.quote} onChange={handleOnChange} value={quote} />
           </div>
 
           <label>Select services</label>

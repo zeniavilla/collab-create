@@ -9,7 +9,7 @@ import { Col } from 'react-bootstrap';
 const UserSignUpForm = props => {
   
   const { handleOnClick, handleOnChange, handleOnSubmit, services } = props;
-  const { name, email, password, password_confirmation, bio, bio_img, location, phone_number, website, instagram, likes } = props.userFormData;
+  const { name, email, password, password_confirmation, bio, bio_img, location, phone_number, website, instagram, likes, quote } = props.userFormData;
   const { errors } = props.currentUser;
 
   return (
@@ -64,6 +64,11 @@ const UserSignUpForm = props => {
         <label htmlFor="instagram">Instagram username</label>
         <div className="form-field">
           <input type="text" id="instagram" placeholder={(errors) ? errors.instagram : null} onChange={handleOnChange} value={instagram || ''} />
+        </div>
+
+        <label htmlFor="quote">Quote</label>
+        <div className="form-field">
+          <input type="text" id="quote" placeholder={(errors) ? errors.quote : null} onChange={handleOnChange} value={quote || ''} />
         </div>
 
         <label>Select services</label>
