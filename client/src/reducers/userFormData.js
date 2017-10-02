@@ -8,6 +8,7 @@ const initialState = {
   phone_number: '',
   website: '',
   instagram: '',
+  quote: '',
   service_ids: []
 }
 
