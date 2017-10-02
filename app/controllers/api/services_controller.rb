@@ -29,7 +29,7 @@ class Api::ServicesController < ApplicationController
   end
 
   def destroy
-    if @service.destory
+    if @service.destroy
       render status: 204
     else
       render json: { message: 'Unable to delete service' }, status: 400
