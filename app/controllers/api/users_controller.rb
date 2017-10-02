@@ -7,7 +7,7 @@ class Api::UsersController < ApplicationController
 
   def update
     @user.update_attributes(user_params)
-    render json: user
+    render json: @user
   end
 
   def destroy
