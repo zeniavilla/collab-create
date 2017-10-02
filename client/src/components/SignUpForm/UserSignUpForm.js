@@ -38,7 +38,7 @@ const UserSignUpForm = props => {
 
         <label htmlFor="bio">Introduce yourself</label>
         <div className="form-field">
-          <input type="textarea" id="bio" placeholder={(errors) ? errors.bio : null} onChange={handleOnChange} value={bio || ''} />
+          <textarea id="bio" placeholder={(errors) ? errors.bio : null} onChange={handleOnChange} value={bio || ''} />
         </div>
 
         <label htmlFor="bio_img">Profile image URL</label>

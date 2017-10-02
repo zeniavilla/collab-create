@@ -33,7 +33,7 @@ const UserEditForm = props => {
 
           <label htmlFor="bio">Introduce yourself</label>
           <div className="form-field">
-            <input type="textarea" id="bio" placeholder={currentUser.bio} onChange={handleOnChange} value={bio} />
+            <textarea id="bio" placeholder={currentUser.bio} onChange={handleOnChange} value={bio} />
           </div>
 
           <label htmlFor="bio_img">Profile image URL</label>

@@ -12,6 +12,7 @@ form {
 
 .form-field input {
   padding-left: 22px;
+  padding-right: 22px;
   width: 100%;
 
   &:not([type="checkbox"]) {
@@ -21,11 +22,13 @@ form {
     height: 50px;
     margin-bottom: 3%;
   }
+}
 
-  &[type=textarea] {
-    padding-bottom: 130px;
-    padding-top: 30px;
-  }
+.form-field textarea {
+  @extend input:not([type="checkbox"]);
+  overflow: hidden;
+  padding: 22px 22px 130px 22px;
+  width: 100%;
 }
 
 ::-webkit-input-placeholder {
