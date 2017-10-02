@@ -1,18 +1,15 @@
 import React from 'react';
 
-// styles
-import '../../styles/components/UserForm.css';
-
 // components
 import { Col } from 'react-bootstrap';
 
 const UserEditForm = props => {
-  const { handleOnChange, handleOnSubmit, currentUser, services } = props;
+  const { handleOnChange, handleOnSubmit, currentUser, services, handleDeleteClick } = props;
   const { name, email, password, password_confirmation, bio, bio_img, location, phone_number, website, instagram } = props.userFormData;
 
   return (
     <div id="wrapper">
-      <form onSubmit={handleOnSubmit}>
+      <form onSubmit={handleOnSubmit} className="edit-form">
         <h2>Edit profile</h2>
         <label htmlFor="name">Full name</label>
         <div className="form-field">
@@ -82,6 +79,8 @@ const UserEditForm = props => {
             <button className="btn-form">Save</button>
           </div>
       </form>
+
+      <button className="btn-form delete" onClick={handleDeleteClick}>Delete account</button>
     </div>
   )
 }
