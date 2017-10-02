@@ -31,18 +31,18 @@ form {
   width: 100%;
 }
 
-::-webkit-input-placeholder {
-  color: red;
+.user-form input::-webkit-input-placeholder {
+  color: $primary-red;
 }
 
-::-moz-placeholder { /* Firefox 19+ */
-  color: red;
+.user-form input::-moz-placeholder { /* Firefox 19+ */
+  color: $primary-red;
 }
-:-ms-input-placeholder { /* IE 10+ */
-  color: red;
+.user-form input:-ms-input-placeholder { /* IE 10+ */
+  color: $primary-red;
 }
-:-moz-placeholder { /* Firefox 18- */
-  color: red;
+.user-form input:-moz-placeholder { /* Firefox 18- */
+  color: $primary-red;
 }
 
 .form-field-check {

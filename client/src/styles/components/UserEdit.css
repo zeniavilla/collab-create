@@ -77,23 +77,23 @@ form {
 
 .form-field textarea {
   overflow: hidden;
-  padding: 30px 22px 130px 22px;
+  padding: 22px 22px 130px 22px;
   width: 100%; }
 
-::-webkit-input-placeholder {
-  color: red; }
+.user-form input::-webkit-input-placeholder {
+  color: #d22626; }
 
-::-moz-placeholder {
+.user-form input::-moz-placeholder {
   /* Firefox 19+ */
-  color: red; }
+  color: #d22626; }
 
-:-ms-input-placeholder {
+.user-form input:-ms-input-placeholder {
   /* IE 10+ */
-  color: red; }
+  color: #d22626; }
 
-:-moz-placeholder {
+.user-form input:-moz-placeholder {
   /* Firefox 18- */
-  color: red; }
+  color: #d22626; }
 
 .form-field-check input[type=checkbox] {
   float: right; }
