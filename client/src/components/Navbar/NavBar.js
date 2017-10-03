@@ -30,7 +30,7 @@ const NavBar = props => {
     <Navbar className="header-nav" collapseOnSelect>
       <Navbar.Header>
         <Navbar.Brand>
-          <Link to="/">collab|create</Link>
+          <Link to="/">collab<span className="bold">create</span></Link>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
