@@ -70,7 +70,7 @@ const UserEditForm = props => {
           <div className="form-field-check clearfix">
           {
             services.map(service => 
-              <Col sm={4}>
+              <Col sm={4} key={service.id}>
                 <span className="form-checkboxes">
                   {service.name} 
                   <input type="checkbox" name={service.name} value={service.id} onChange={handleOnChange} />
