@@ -2,6 +2,11 @@
 
 collab|create is a CRUD app that allows creative professionals to connect and work together. The server is powered by Ruby on Rails and uses custom API endpoints. The front-end utilizes React components and Redux for state management.
 
+For the client, visit [CollabCreateClient](https://github.com/zeniavilla/CollabCreateClient).
+
+For the API, visit [CollabCreateAPI](https://github.com/zeniavilla/CollabCreateAPI).
+
+For a demo, visit [collab|create](https://collab-create.herokuapp.com/).
 ## Installation
 
 Clone this repo. Within the main directory, type the following lines into your terminal.
