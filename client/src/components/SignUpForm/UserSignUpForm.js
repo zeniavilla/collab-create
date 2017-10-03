@@ -70,17 +70,17 @@ const UserSignUpForm = props => {
 
         <label htmlFor="website">Website</label>
         <div className="form-field">
-          <input type="text" id="website" value={website || ''} />
+          <input type="text" id="website" onChange={handleOnChange} value={website || ''} />
         </div>
 
         <label htmlFor="instagram">Instagram username</label>
         <div className="form-field">
-          <input type="text" id="instagram" value={instagram || ''} />
+          <input type="text" id="instagram" onChange={handleOnChange} value={instagram || ''} />
         </div>
 
         <label htmlFor="quote">Quote</label>
         <div className="form-field">
-          <input type="text" id="quote" value={quote || ''} />
+          <input type="text" id="quote" onChange={handleOnChange} value={quote || ''} />
         </div>
 
         <label>Select services</label>
