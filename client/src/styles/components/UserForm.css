@@ -147,3 +147,6 @@ button.btn-form {
 .user-form label {
   font: 300 1.2em/100% "Lato", sans-serif;
   margin-bottom: 3%; }
+
+.form-error {
+  color: #d22626; }

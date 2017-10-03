@@ -149,6 +149,9 @@ button.btn-form {
   font: 300 1.2em/100% "Lato", sans-serif;
   margin-bottom: 3%; }
 
+.form-error {
+  color: #d22626; }
+
 ::-webkit-input-placeholder {
   color: #4c4c4c;
   position: relative;
