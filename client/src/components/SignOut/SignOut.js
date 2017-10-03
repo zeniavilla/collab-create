@@ -7,7 +7,7 @@ class SignOut extends Component {
   componentWillMount = () => {
     this.props.removeCurrentUser();
     const { history } = this.props;
-    history.push('/sign_in');
+    history.push('/signin');
   }
 
   render() {
