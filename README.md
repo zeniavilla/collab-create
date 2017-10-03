@@ -1,24 +1,34 @@
-# README
+# collab|create App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+collab|create is a CRUD app that allows creative professionals to connect and work together. The server is powered by Ruby on Rails and uses custom API endpoints. The front-end utilizes React components and Redux for state management.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Clone this repo. Within the main directory, type the following lines into your terminal.
 
-* System dependencies
+    $ bundle install
+    $ rails db:create
+    $ rails db:migrate
 
-* Configuration
+Within the client directory, type the following line into your terminal.
+    $ npm install
 
-* Database creation
+## Usage
 
-* Database initialization
+Within the main directory, type the below line into your terminal.
 
-* How to run the test suite
+    $ rails s -p 3001
 
-* Services (job queues, cache servers, search engines, etc.)
+Within the /client directory, type the below line into your terminal and your browser should open automatically with the application running.
 
-* Deployment instructions
+    $ npm start
 
-* ...
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/zeniavilla/collab-create. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+
+## License
+
+The app is available as open source.
+
