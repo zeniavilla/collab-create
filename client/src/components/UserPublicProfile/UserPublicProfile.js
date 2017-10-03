@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 
 const UserPublicProfile = props => {
-  const { id, name, email, bio, bio_img, phone_number, website, instagram, location, services, quote } = props.user;
+  const { name, email, bio, bio_img, phone_number, website, instagram, location, services, quote } = props.user;
   
   const bioBackgroundImg = {
     backgroundImage: `url(${bio_img})`

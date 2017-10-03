@@ -8,8 +8,8 @@ import { Col } from 'react-bootstrap';
 
 const UserSignUpForm = props => {
   
-  const { handleOnClick, handleOnChange, handleOnSubmit, services } = props;
-  const { name, email, password, password_confirmation, bio, bio_img, location, phone_number, website, instagram, likes, quote } = props.userFormData;
+  const { handleOnChange, handleOnSubmit, services } = props;
+  const { name, email, password, password_confirmation, bio, bio_img, location, phone_number, website, instagram, quote } = props.userFormData;
   const { errors } = props.currentUser;
 
   return (
