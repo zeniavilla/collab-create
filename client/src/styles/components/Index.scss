@@ -1,0 +1,44 @@
+@import '../shared.scss';
+
+div.home-background {
+  background: #fff url("https://static.pexels.com/photos/297648/pexels-photo-297648.jpeg")no-repeat center center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1011px rgba(240, 240, 240, .6);
+  height: 100vh;
+  max-width: 100%;
+  opacity: .8;
+
+  h2 {
+    color: $primary-pink;
+    font-size: 4em;
+    margin-top: 0;
+    padding-bottom: 6px;
+    padding-top: 300px;
+    text-align: center;
+  }
+
+  .home-body {
+    color: #000;
+    font-size: 1.3em;
+    line-height: 170%;
+    margin: 0 auto 25px;
+    max-width: 38%;
+  }
+}
+
+.btn-announcement {
+  -webkit-transition: background-color 2s;
+  background-color: $primary-pink;
+  border: 1px solid $secondary-pink;
+  border-radius: 10px;
+  color: #fff;
+  display: block;
+  font: 600 1.8em/100% $title-font;
+  margin: 0 auto;
+  padding: 25px 100px;
+
+  &:hover {
+    background-color: $secondary-pink;
+    transition: background-color 1s ease-in-out;
+  }
+}
