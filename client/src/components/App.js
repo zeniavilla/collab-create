@@ -15,6 +15,7 @@ import UserProfileEdit from './UserEdit/UserProfileEdit';
 import SignIn from './SignInForm/SignIn';
 import SignOut from './SignOut/SignOut';
 import UserShow from './UserPublicProfile/UserShow';
+import Index from './Home/Index';
 
 class App extends Component {
   render() {
@@ -22,15 +23,13 @@ class App extends Component {
       <Router>
         <div>
           <NavCurrentUser />
-          <div>
-            <Route path="/services" component={ServiceGrid} />
-            <Route path="/signup" component={UserNew} />
-            <Route path="/signin" component={SignIn} />
-            <Route path="/signout" component={SignOut} />
-            <Route path="/profile/:userId" component={UserProfileEdit} />
-            <Route path="/users/:userId" component={UserShow} />
-          </div>
-
+          <Route path="/services" component={ServiceGrid} />
+          <Route path="/signup" component={UserNew} />
+          <Route path="/signin" component={SignIn} />
+          <Route path="/signout" component={SignOut} />
+          <Route path="/profile/:userId" component={UserProfileEdit} />
+          <Route path="/users/:userId" component={UserShow} />
+          <Route exact path="/" component={Index} />
           <Footer />
         </div>
       </Router>
