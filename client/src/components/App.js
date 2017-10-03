@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 // styles
 import '../styles/components/App.css';
@@ -8,7 +8,6 @@ import '../styles/components/App.css';
 // components
 import ServiceGrid from './ServiceGrid/ServiceGrid';
 import NavCurrentUser from './Navbar/NavCurrentUser';
-import ServicesNav from './ServicesNav/ServicesNav';
 import Footer from './Footer/Footer';
 import UserNew from './SignUpForm/UserNew';
 import UserProfileEdit from './UserEdit/UserProfileEdit';
@@ -27,7 +26,11 @@ class App extends Component {
           <Route path="/signup" component={UserNew} />
           <Route path="/signin" component={SignIn} />
           <Route path="/signout" component={SignOut} />
-          <Route path="/profile/:userId" component={UserProfileEdit} />
+          <Route exact path="/profile/:userId" render={() => (
+            !this.props.currentUser.id 
+            ? <Redirect to="/signin"/>
+            : <UserProfileEdit />
+          )}/>
           <Route path="/users/:userId" component={UserShow} />
           <Route exact path="/" component={Index} />
           <Footer />
@@ -38,7 +41,9 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-  return({ services: state.services })
+  return({ 
+    currentUser: state.currentUser
+  })
 }
 
 export default connect(mapStateToProps)(App);
