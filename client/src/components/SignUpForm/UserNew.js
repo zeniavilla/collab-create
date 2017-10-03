@@ -35,7 +35,8 @@ class UserNew extends Component {
     this.props.updateUserFormData(currentUserFormData);
   }
 
-  handleOnSubmit = event => {
+  handleOnSubmit = event => { 
+    window.scrollTo(0,0);
     event.preventDefault();
     const { createUser } = this.props;
 
@@ -50,8 +51,8 @@ class UserNew extends Component {
     const { history } = this.props;
     if (this.props.currentUser.id) {
       history.push(`/profile/${this.props.currentUser.id}`);
+      window.scrollTo(0,0);
     }
-
   }
 
   render() {
