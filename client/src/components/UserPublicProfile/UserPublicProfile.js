@@ -14,12 +14,12 @@ const UserPublicProfile = props => {
   return (
     <div>
       <Row className="profile-header">
-        <Col sm={3}>
+        <Col lg={3}>
           <div className="profile-bio-img" style={bioBackgroundImg}>
             <Button href={`mailto:${email}`} title={`Email ${name}`}><i className="fa fa-envelope-o"></i></Button>
           </div>
         </Col>
-        <Col sm={9}>
+        <Col lg={9}>
           <h1>Meet</h1>
           <h2>{name}</h2>
           <div className="quote-text">"{quote}"</div>
