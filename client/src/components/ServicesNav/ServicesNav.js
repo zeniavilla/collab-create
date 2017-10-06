@@ -25,6 +25,7 @@ const ServicesNav = props => {
   return (
     <div>
       <Navbar className="services-nav" collapseOnSelect>
+        <Navbar.Toggle />
         <Navbar.Collapse>
           <Nav>
             {renderLinks}
