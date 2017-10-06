@@ -3,7 +3,7 @@
 
 form {
   margin: 0 auto;
-  width: 55%;
+  width: 65%;
 }
 
 .form-field {
@@ -73,7 +73,6 @@ form {
 
   &:hover, &:checked {
     background-color: $primary-blue;
-    border: none;
   }
 }
 

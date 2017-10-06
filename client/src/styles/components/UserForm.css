@@ -43,25 +43,9 @@ a {
 button:focus {
   outline: none; }
 
-@media (min-width: 1400px) {
-  .container {
-    width: 1370px; } }
-
-@media (min-width: 1600px) {
-  .container {
-    width: 1570px; } }
-
-@media (min-width: 1800px) {
-  .container {
-    width: 1770px; } }
-
-@media (min-width: 1900px) {
-  .container {
-    width: 1870px; } }
-
 form {
   margin: 0 auto;
-  width: 55%; }
+  width: 65%; }
 
 .form-field {
   margin-bottom: 2%; }
@@ -117,8 +101,7 @@ form {
   vertical-align: middle;
   width: 20px; }
   .form-field-check input[type=checkbox]:hover, .form-field-check input[type=checkbox]:checked {
-    background-color: #d6eff7;
-    border: none; }
+    background-color: #d6eff7; }
 
 .form-action {
   margin-top: 4%; }
