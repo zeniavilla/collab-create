@@ -1,0 +1,55 @@
+@media (max-width: 1400px) {
+  #root div#wrapper {
+    max-width: 85%; } }
+
+@media (min-width: 1263px) {
+  div.picture-overlay {
+    width: 92%; } }
+
+@media (max-width: 1100px) {
+  body {
+    font-size: 1em; }
+  div.picture-overlay.card-title {
+    font-size: 2em; }
+  #wrapper form {
+    width: 80%; } }
+
+@media (max-width: 865px) {
+  #wrapper form {
+    width: 100%; }
+  form.user-form h2, div.profile-header h2, div.service-users h2 {
+    font-size: 1.5em; }
+  #root div.home-background .home-body {
+    max-width: 50%; }
+  button.btn-announcement {
+    font-size: 1.3em;
+    padding: 20px 70px; } }
+
+@media (max-width: 828px) {
+  nav.services-nav {
+    display: none; }
+  #root div.home-background h2 {
+    font-size: 3em;
+    padding-top: 230px; } }
+
+@media (max-width: 767px) {
+  #root div#wrapper {
+    max-width: 100%;
+    padding: 20px 40px; }
+  div.picture-overlay {
+    height: 100%;
+    width: 95%; }
+  div.form-field-check input[type=checkbox] {
+    float: none;
+    height: 25px;
+    width: 25px; }
+  #root div.home-background h2 {
+    font-size: 3em;
+    padding-top: 215px; } }
+
+@media (max-width: 520px) {
+  div.form-action button.btn-form {
+    width: 230px; }
+  #root div.home-background h2 {
+    font-size: 2em;
+    padding-top: 170px; } }
